@@ -1,0 +1,172 @@
+.snp-theme18 {
+    border: 25px solid #4dc0ae;
+    background: #f5f4ed;
+    font-family: Arial;
+    font-weight: 400;
+    width: 700px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.snp-theme18 .snp-powered-b {
+	bottom: -55px !important;
+	right: -20px !important;
+}
+.snp-theme18 header .snp-topheader {
+    font-size: 75px;
+    color: #fff;
+    position: absolute;
+    top: -110px;
+    font-family: Tahoma;
+    font-weight: 800;
+    background: url('../img/envelope.png') no-repeat scroll 0 0 transparent;
+    left: -25px;
+    height: 110px;
+    padding-left: 150px;
+    padding-top: 10px;
+}
+.snp-theme18 header {
+    background: #f5f4ed;
+    overflow: hidden;
+    text-align: center;
+    padding: 0 20px 40px;
+}
+.snp-theme18 header h2 {
+    color: #4dc0ae;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    padding: 19px 0;
+}
+.snp-theme18 header .snp-icons {
+    margin: 16px 0;
+}
+.snp-theme18 header .snp-icons img {
+    max-width: 100%;
+}
+.snp-theme18 .snp-newsletter-content {
+    background: #f5f4ed;
+    overflow: hidden;
+    margin: -40px 0 0;
+    color: #959595;
+    position: relative;
+    padding: 0 20px;
+}
+.snp-theme18 .snp-newsletter-content h2 {
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+    padding: 13px 0;
+}
+.snp-theme18 .snp-newsletter-content p {
+    text-align: center;
+    font-size: 12px;
+    margin: 12px 0;
+}
+.snp-theme18 .snp-newsletter-content p small {
+    font-size: 12px;
+    padding-left: 20px;
+    background: url('../img/lock.png') no-repeat scroll 0 0 transparent;
+}
+.snp-theme18 .snp-newsletter-content p img {
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-right: 5px;
+}
+.snp-theme18 form input[type="text"],.snp-theme18 form select,.snp-theme18 form textarea,
+.snp-theme18 form input[type="text"]:focus,.snp-theme18 form select:focus,.snp-theme18 form textarea:focus{
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid transparent;
+    font-family: Arial, sans-serif;
+    background: transparent;
+    color: #959595;
+    background-color: #fff;
+    font-size: 14px;
+    border-top: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+    text-align: left;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    margin-bottom: 20px;
+}
+.snp-theme18 form input[type="submit"] {
+    background: #ff8e36;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 0;
+    display: block;
+    width: 200px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 auto;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-box-shadow: 0 4px 0 #e76400;
+    -moz-box-shadow: 0 4px 0 #e76400;
+    box-shadow: 0 4px 0 #e76400;
+}
+.snp-theme18 form input[type="submit"]:hover {
+    -webkit-box-shadow: 0 0 0 #e76400;
+    -moz-box-shadow: 0 0 0 #e76400;
+    box-shadow: 0 0 0 #e76400;
+}
+.snp-theme18 .snp-close {
+    position: absolute;
+    right: -25px;
+    top: -25px;
+    width: 25px;
+    height: 25px;
+    background: url('../img/close.png') no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+}
+@media (max-width: 700px) {
+    .snp-theme18 {
+	width: 460px;
+	max-width: 100%;
+    }
+    .snp-theme18 header .snp-topheader {
+	display: none;
+    }
+}
+@media (max-width: 460px) {
+    .snp-theme18 {
+	width: 320px;
+	max-width: 100%;
+   }
+    .snp-theme18 header h2 {
+	margin-top: 45px;
+    }
+}
+
+
+.snp-theme18 .snp-error {
+    color: #CC0000 !important;
+    border: 1px solid #CC0000 !important;
+}
+.snp-theme18 .snp-error::-webkit-input-placeholder { color: #CC0000; }
+.snp-theme18 input.snp-error:-moz-placeholder { color: #515151; }
+.snp-theme18 .snp-error.placeholder { color: #515151; }
+
+.snp-pop-theme18-wrap .fancybox-close {
+    display: none;
+}

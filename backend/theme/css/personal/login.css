@@ -1,0 +1,21 @@
+/* 
+    Created on : Dec 15, 2014, 5:57:58 PM
+    Author     : dellpinto
+*/
+
+.form-help{
+    font-size: 150%;
+}
+input.form-control{
+    background-color: #000; border: #fff 1px solid; color: #fff;
+    text-align: center; font-size: 120%;
+}
+
+#login_error {
+    background-color: #fff;
+    border-left: 4px solid #dc3232;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    margin: 5px 0 15px;
+    padding: 12px;
+    color: #333;
+}

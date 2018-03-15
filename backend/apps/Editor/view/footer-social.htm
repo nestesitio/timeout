@@ -1,0 +1,26 @@
+<form id="social-link-form">
+    <div class="zone-item zone-item-social-link form-inline">
+        <label for="post-link"><span class="{$icon}"></span></label>
+        {$input-link}
+    </div>
+    <div class="zone-warnings" style="clear: both;">
+        {$warnings}
+    </div>
+    <div class="popi-buttons">
+        <ul class="nav navbar-nav navbar-zone">
+            <li class="menu-edit-tools">
+                <a class="btn-edit-save" 
+                   data-action="/backend/editor/updatesocial_footer/?js=1&social={$social}">
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                    <br />Save
+                </a>
+            </li>
+            <li class="menu-edit-tools">
+                <a class="close-popi">
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                    <br />Close
+                </a>
+            </li>
+        </ul>
+    </div>
+</form>

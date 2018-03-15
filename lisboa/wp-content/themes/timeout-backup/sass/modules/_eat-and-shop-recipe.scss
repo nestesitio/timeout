@@ -1,0 +1,144 @@
+.eat-and-shop-recipe{
+	@include clearfix;
+
+	&__col{
+		width: 100%;
+		float: left;
+
+		@include breakpoint(phablet) {
+			width: 50%;
+		}
+
+		&--full{
+			width: 100%;
+
+			@include breakpoint(tablet) {
+				width: 50%;
+			}
+		}
+
+		&--pad{
+			padding-left: 20px;
+			padding-right: 20px;
+
+			@include breakpoint(tablet) {
+				padding-left: 20px;
+				padding-right: 0;
+			}
+
+			@include breakpoint(desktop) {
+				padding-left: 30px;
+			}
+
+			@include breakpoint(big-desktop) {
+				padding-left: 40px;
+			}
+
+			@include breakpoint(large-desktop) {
+				padding-left: 60px;
+			}
+		}
+	}
+
+	&__category{
+		font-size: rem(20);
+		color: $color__blue-light;
+		font-family: $font__yellowDesign;
+		font-weight: 400;
+		margin: 20px 0;
+
+		@include breakpoint(laptop) {
+			font-size: rem(25);
+		}
+
+		@include breakpoint(desktop) {
+			font-size: rem(30);
+		}
+
+		@include breakpoint(big-desktop) {
+			font-size: rem(35);
+			margin: 30px 0 20px;
+		}
+
+		@include breakpoint(large-desktop) {
+			font-size: rem(40);
+			margin: 50px 0 30px;
+		}
+	}
+
+	&__icon{
+		color: white;
+		margin-left: 10px;
+		line-height: 1;
+	}
+
+	&__title{
+		font-size: rem(30);
+		font-family: $font__leagueGothic;
+		text-transform: uppercase;
+		line-height: 1;
+		margin: 20px 0;
+
+		@include breakpoint(laptop) {
+			font-size: rem(40);
+		}
+
+		@include breakpoint(desktop) {
+			font-size: rem(50);
+			margin: 30px 0;
+		}
+
+		@include breakpoint(big-desktop) {
+			font-size: rem(70);
+		}
+
+		@include breakpoint(large-desktop) {
+			font-size: rem(90);
+			margin: 50px 0;
+		}
+	}
+
+	&__description{
+
+		p{
+			font-size: rem(15);
+
+			@include breakpoint(desktop) {
+				font-size: rem(18);
+			}
+
+			@include breakpoint(large-desktop) {
+				font-size: rem(20);
+			}
+
+		}
+	}
+
+	&__ingredients{
+
+		@include breakpoint(laptop) {
+			padding-right: 20px;
+		}
+		
+		p{
+			font-family: $font__leagueGothic;
+			font-size: rem(20);
+
+			@include breakpoint(desktop) {
+				font-size: rem(25);
+			}
+
+			@include breakpoint(large-desktop) {
+				font-size: rem(35);
+			}
+
+		}
+
+	}
+
+	&__image{
+		width: 100%;
+		display: block;
+	}
+
+}

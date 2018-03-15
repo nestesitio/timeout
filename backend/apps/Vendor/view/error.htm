@@ -1,0 +1,16 @@
+
+<div id="error-routing" style="position: relative;margin: 5px;padding:1px;width: 94%;">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2 class="panel-title project-title">Error Page</h2>
+        </div>
+        <hr />
+        <div class="panel-body" style="padding: 5px">
+            <h4>{$description}</h4>
+            {@while ($item in $errors):}
+            - {$item.message}<hr />
+            {@endwhile;} 
+        </div>
+        <hr />
+    </div>
+</div>

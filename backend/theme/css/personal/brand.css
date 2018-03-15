@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 21, 2016, 5:47:16 PM
+    Author     : dellpinto
+*/
+
+@font-face {
+    font-family: 'LeagueGothic'; font-style: normal; font-weight: 800;
+    src: url(/backend/theme/fonts/LeagueGothic-CondensedRegular.otf);
+}
+@font-face {
+    font-family: 'LeagueGothic'; font-style: italic; font-weight: 800;
+    src: url(/backend/theme/fonts/LeagueGothic-CondensedItalic.otf);
+}
+@font-face {
+    font-family: 'LeagueGothic'; font-style: normal; font-weight: 400;
+    src: url(/backend/theme/fonts/LeagueGothic-Regular.otf);
+}
+@font-face {
+    font-family: 'LeagueGothic'; font-style: italic; font-weight: 400;
+    src: url(/backend/theme/fonts/LeagueGothic-Italic.otf);
+}
+@font-face {
+    font-family: 'YellowDesign'; font-style: normal; font-weight: 400;
+    src: url(/backend/theme/fonts/timeout/yellow_design_studio-thirstyroughreg-webfont.woff2);
+}
+@font-face {
+    font-family: 'Thirsty'; font-style: normal; font-weight: 700;
+    src: url(/backend/theme/fonts/timeout/YellowDesignStudio-ThirstyRoughBol.otf);
+}
+html, body 
+{
+    background-color: #000; color: #fff;
+    font-family: 'LeagueGothic', serif;
+}
+h1, h2, h3, h4, h5, h6, p{font-family: 'LeagueGothic', serif;}
+
+.navbar-fixed-top,
+.navbar-default
+{
+    border: none;
+    background-color: #000;
+    border-bottom: #FFF 2px solid;
+}
+.navbar-nav {
+    /*margin: 7.5px 25px;*/
+}
+
+.navbar-default.affix {
+    background-color: rgba(60, 60, 60, 0.95);
+    border-bottom-color: #fff;
+}
+.navbar-default.affix .nav > li > a, .navbar-default.affix .nav > li > a:focus {
+    color: #ddd;
+}
+
+.navbar-header {
+    float: right;
+}
+
+/* nav links*/
+.menu-edit-tools{text-align: center;}
+
+/*main content*/
+#main-content{
+    /*padding-top: 40px;*/
+}
+
+.timeout-wwb{ font-family: 'YellowDesign'}
+h1.timeout-wwb{ font-size: 1.8em; margin: 0; }
+
+.menu-edit-lang a.active{
+    font-family: 'Thirsty', serif; font-weight: 800; 
+    color: #00A5E5 !important;
+    pointer-events: none; cursor: default;
+}

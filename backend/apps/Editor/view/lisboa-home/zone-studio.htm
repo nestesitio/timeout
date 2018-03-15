@@ -1,0 +1,39 @@
+<form id="form-zone-studio">
+    <div class="container-fluid zone-form">
+        
+        <div class="zone-switcher-container">
+            <div class="zone-switcher">{$zone-studio-switcher}</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                
+                <div class="zone-item zone-item-header">{$zone-studio-header}</div>
+                
+                <div class="zone-item zone-item-title">{$zone-studio-title}</div>
+                
+                <div class="zone-studio-select">{$zone-studio-select}</div>
+                
+                <div id="studio-highlight">
+                    <div class="zone-item zone-item-image">
+                        {$zone-studio-image}
+                        {$zone-studio-image-filename}
+                    </div>
+
+                    <div class="zone-item zone-item-header" style="text-align: left">{$zone-studio-date}</div>
+
+                    <div class="zone-item zone-item-title" style="text-align: left; font-size: 5em;">
+                        {$zone-studio-event-title}
+                    </div>
+
+                    <div class="zone-item zone-item-id">{$zone-studio-id}</div>
+                </div>
+                
+            </div>
+        </div>
+        
+        {@include 'Editor/view/calendar-buttons.htm';[REPLACE-ZONE=>'studio']}
+        
+
+    </div>
+</form>

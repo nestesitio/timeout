@@ -1,0 +1,226 @@
+.snp-theme13 {
+    font: 15px/1.5 Calibri, "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #c6c3c3;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    position: relative;
+}
+
+@keyframes shake{ 
+    0% { transform: translate(3px, 0); }
+50% { transform: translate(-3px, 0); }
+100% { transform: translate(0, 0); }
+}
+
+@-moz-keyframes shake{ 
+    0% { -moz-transform: translate(3px, 0); }
+50% { -moz-transform: translate(-3px, 0); }
+100% { -moz-transform: translate(0, 0); }
+}
+
+@-webkit-keyframes shake {
+    0% { -webkit-transform: translate(3px, 0); }
+50% { -webkit-transform: translate(-3px, 0); }
+100% { -webkit-transform: translate(0, 0); }
+}
+
+.snp-theme13 .snp-header {
+    font-size: 35px;
+    text-align: left;
+    color: #5fb1ea;
+    margin-bottom: 15px;
+}
+
+
+.snp-theme13 .snp-text {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+
+.snp-theme13 .snp-body {
+    padding: 30px 40px 30px 75px;
+}
+
+.snp-theme13 .snp-privacy {
+    font-size: 14px;
+    margin-top: 20px;
+    padding-left: 30px;
+    background-image: url(gfx/security_ico.png);
+    background-repeat: no-repeat;
+    background-position: 5px 0px;
+}
+
+.snp-theme13 .snp-form {
+    margin-bottom: 10px;
+}
+
+.snp-theme13 .snp-field {
+    display: block;
+    width: 100%;
+    height: 38px;
+    background-color: #ffffff;
+    font: 15px/1.5 Calibri, "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 10px 10px 10px 45px;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-repeat: no-repeat;
+}
+
+.snp-theme13 textarea.snp-field {
+    height: 96px;
+    padding-left: 10px;
+}
+.snp-theme13 select.snp-field {
+    padding-left: 10px;
+}
+.snp-theme13 .snp-field-name {
+    background-image: url(gfx/input-name.png);
+    background-position: 15px 8px;
+}
+.snp-theme13 .snp-field-email {
+    background-image: url(gfx/input-email.png);
+    background-position: 13px 11px;
+}
+.snp-theme13 .snp-field-phone {
+    background-image: url(gfx/input-phone.png);
+    background-position: 13px 10px;
+}
+.snp-theme13 .snp-field-address {
+    background-image: url(gfx/input-address.png);
+    background-position: 13px 9px;
+}
+.snp-theme13 .snp-field-website {
+    background-image: url(gfx/input-website.png);
+    background-position: 13px 13px;
+}
+
+
+.snp-theme13 .snp-field ::-webkit-input-placeholder {
+    color: #969696;
+}
+.snp-theme13 .snp-field :-moz-placeholder {
+    color: #969696;
+}
+.snp-theme13 .snp-field :-ms-input-placeholder {
+    color: #969696;
+}
+.snp-theme13 .snp-submit, .snp-theme13 .snp-submit:hover { 
+    float: right;
+    border: 0px;
+    cursor: pointer;
+    min-height: 42px;
+    padding: 0 20px 0 50px;
+    background: #5fb1ea;
+    color: #fff;
+    font: 20px/1.5 Calibri, "Trebuchet MS", Arial, Helvetica, sans-serif;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-image: url(gfx/tick_white.png);
+    background-repeat: no-repeat;
+    background-position: 15px 9px;
+}
+.snp-theme13 .snp-submit:active {
+    position: relative;
+    top: 2px;
+}
+
+.snp-theme13 .snp-error {
+    color: #CC0000 !important;
+    border: 1px solid #CC0000 !important;
+    animation-name: shake; 
+    animation-duration: 150ms; 
+    animation-iteration-count: 2; 
+    animation-timing-function: linear;
+
+    -moz-animation-name: shake; 
+    -moz-animation-duration: 150ms; 
+    -moz-animation-iteration-count: 2; 
+    -moz-animation-timing-function: linear;
+
+    -webkit-animation-name: shake;
+    -webkit-animation-duration: 150ms;
+    -webkit-animation-iteration-count: 2;
+    -webkit-animation-timing-function: linear;
+}
+.snp-theme13 .snp-error::-webkit-input-placeholder { color: #CC0000; }
+.snp-theme13 input.snp-error:-moz-placeholder { color: #515151; }
+.snp-theme13 .snp-error.placeholder { color: #515151; }
+
+.snp-theme13 .snp-close {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.snp-pop-theme13-wrap .fancybox-close {
+    display: none;
+}
+
+.snp-theme13 .snp-close {
+    display: inline-block;
+    line-height: 28px;
+    height: 29px;
+    width: 29px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #5fb1ea;
+    color: #fff;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.snp-theme13 .snp-close:hover {
+    color: #fff;
+}
+.snp-theme13 .snp-mail {
+    background-color: #5fb1ea;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: -55px;
+    height: 110px;
+    width: 110px;
+    background-image: url(gfx/mail_white.png);
+    background-repeat: no-repeat;
+    background-position: 22px 31px;
+    box-shadow: 0px 0 0px 8px rgba(115, 125, 143, 0.5); 
+}
+
+@media only screen and (max-width: 780px) {
+    .snp-theme13 .snp-mail {
+	display: none;
+    }
+    .snp-theme13 .snp-body {
+	padding: 30px 40px 40px 40px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .snp-theme13 .snp-mail {
+	display: none;
+    }
+    .snp-theme13 .snp-text {
+	display: none;
+    }
+    .snp-theme13 .snp-body {
+	padding: 30px 25px 25px 25px;
+    }
+}

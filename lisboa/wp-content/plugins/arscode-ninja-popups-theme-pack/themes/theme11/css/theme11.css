@@ -1,0 +1,160 @@
+.snp-theme11 {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    color: #391c04;
+    max-width: 530px;
+    background-color: #f7f7f5;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 35px 30px 30px 30px;
+    position: relative;
+}
+
+.snp-theme11 .snp-header {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.snp-theme11 .snp-header span {
+    color: #70b907;
+}
+
+.snp-theme11 .snp-text {
+    margin-bottom: 20px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.snp-theme11 .snp-img {
+    text-align: center;
+}
+
+.snp-theme11 .snp-privacy {
+    padding: 2px 20px 15px 40px;
+    background: url(gfx/lock.png) no-repeat 20px 1px;
+    background-color: #ebeae8;
+    border-bottom-left-radius: 10px;
+    -moz-border-bottom-left-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.snp-theme11 .snp-form {
+    background-color: #ebeae8;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-bottom-left-radius: 0;
+    -moz-border-bottom-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    padding: 20px;
+    height: 80px;
+}
+
+.snp-theme11 .snp-field {
+    width: 100%;
+    padding-right: 64px;
+}
+.snp-theme11 .snp-field input {
+    display: block;
+    width: 100%;
+    height: 38px;
+    background-color: #ffffff;
+    border: 2px solid #68655f;
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 10px 10px 10px 10px;
+    color: #68655f;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.snp-theme11 .snp-field ::-webkit-input-placeholder {
+    color: #969696;
+}
+.snp-theme11 .snp-field :-moz-placeholder {
+    color: #969696;
+}
+.snp-theme11 .snp-field :-ms-input-placeholder {
+    color: #969696;
+}
+.snp-theme11 .snp-submit { 
+    padding: 0 27px;
+    margin: 0;
+    border: 0;
+    float: right; 
+    height: 38px; 
+    margin-top: -48px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 2px solid #68655f;
+    text-indent: -9999em;
+    cursor: pointer;
+    background-color: #79bb49;
+    background-image: url(gfx/tick_big.png);
+    background-repeat: no-repeat;
+    background-position: 13px 4px; 
+
+}
+.snp-theme11 .snp-submit:active {
+}
+.snp-theme11 .snp-error {
+    color: #CC0000 !important;
+    border: 2px solid #CC0000 !important;
+}
+.snp-theme11 .snp-error::-webkit-input-placeholder { color: #CC0000; }
+.snp-theme11 input.snp-error:-moz-placeholder { color: #515151; }
+.snp-theme11 .snp-error.placeholder { color: #515151; }
+
+.snp-theme11 img {
+    max-width: 100%;
+}
+
+.snp-pop-theme11-wrap .fancybox-close {
+    display: none;
+}
+
+.snp-theme11 .snp-close {
+    display: inline-block;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #68655f;
+    line-height: 23px;
+    text-align: center;
+    padding: 0 7px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.snp-theme11 .snp-close:hover {
+    color: #f7f7f5;
+    background-color: #391c04;
+}
+
+@media only screen and (max-width: 480px) {
+    .snp-theme11 {
+	padding: 15px 10px 10px 10px;
+    }
+    .snp-theme11 .snp-text {
+	padding: 0;
+    }
+    .snp-theme11 .snp-header {
+	font-size: 25px !important;
+    }
+    .snp-theme11 .snp-close {
+	top: 5px;
+	right: 5px;
+    }
+}

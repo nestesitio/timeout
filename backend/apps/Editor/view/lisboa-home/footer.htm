@@ -1,0 +1,87 @@
+<footer id="footer" class="site-footer" role="contentinfo">
+    <div class="site-info">
+        <div class="col-md-6 footer-1">
+            <section class="col col--two col--two--mobile col--padding-left-big">
+                <h2 class="home-module__title">site</h2>
+                <div class="menu-lang">
+                    <ul id="primary-menu" class="menu">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84">
+                            <a href="/">Entrada</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87">
+                            <a href="/conceito/">Time Out Market</a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-81">
+                            <a href="/comer-e-beber">Comer &amp; Beber</a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-80">
+                            <a href="/academia/">Academia</a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-441">
+                            <a href="/estudio/">Estúdio</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-737">
+                            <a href="/agenda/">Agenda</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-535">
+                            <a href="/home/como-chegar/">Como chegar</a>
+                        </li>
+                    </ul>
+                </div> 
+            </section> 
+            <section class="col col--two col--two--mobile col--padding-left-big">
+                <h2 class="home-module__title">contactos</h2> 
+
+                <h3 class="site-footer__subtitle">Morada</h3> 
+                <div data-input="textarea" data-action="/backend/editor/address_footer" class="show-data to-edit info-address">
+                    {$footer-address} 
+                </div>
+                <a class="address-link" href="https://www.google.pt/maps/place/Time+Out+Mercado+da+Ribeira/@38.7067345,-9.1481336,17z/data=!3m1!4b1!4m5!3m4!1s0xd193487595e6075:0x138fe14e4972dc92!8m2!3d38.7067345!4d-9.1459449">
+                </a>
+                <h3 class="site-footer__subtitle">Telefone</h3>
+
+                <div data-input="text" data-action="/backend/editor/tel_footer" class="show-data to-edit">
+                    {$footer-tel} 
+                </div>
+
+                <h3 class="site-footer__subtitle">E-Mail</h3>
+
+                <div data-input="text" data-action="/backend/editor/email_footer" class="show-data to-edit">
+                    {$footer-email} 
+                </div>
+                <h3 class="site-footer__subtitle">Redes Sociais</h3>
+                <div class="social-media-editor">
+                    <ul class="list-inline">
+                        {@while ($item in $footlinks):}
+                        <li>
+                            <a class="popi-link {$item.status}" 
+                               data-action="{$item.data-action}"
+                               href="{$item.href}" target="_blank">
+                                <i class="icon {$item.icon}"></i> 
+                            </a>
+                        </li>
+                        {@endwhile;}
+                        
+                    </ul>
+                </div>
+                
+            </section>
+                
+        </div>
+        <div class="col-md-6 footer-2 -txt-center"> 
+            <a href="http://www.timeout.com/" target="_blank">
+                <img class="site-footer__logo" src="/wp-content/themes/timeout/img/timeout-market-lisbon.png?2d1aff" alt="Timeout Market Lisbon"></a>
+                <p class="site-footer__copyright">Todos os direitos reservados 2016&copy;</p>
+        </div>
+    </div>
+    <div class="subheader">
+            <ul>
+                <li>
+                    <div data-input="textarea" data-action="/backend/editor/copy_footer" class="show-data to-edit info-copy">
+                        {$footer-copy} 
+                    </div>
+                </li>
+            </ul>
+        </div>
+    <div class="sampleClass"></div>
+</footer>

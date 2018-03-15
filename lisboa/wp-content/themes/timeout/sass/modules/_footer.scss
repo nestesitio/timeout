@@ -1,0 +1,128 @@
+.site-footer{
+	padding: 20px;
+	margin-top: 20px;
+
+	@include breakpoint(tablet) {
+		margin-top: 0;
+	}
+
+	@include breakpoint(laptop) {
+		padding: 20px 0 20px;
+	}
+
+	.-pad-left-big{
+		padding-left: 0;
+
+		@include breakpoint(laptop) {
+			padding-left: 90px;
+		}
+	}
+
+	&__title{
+		margin: 0;
+		font-family: YellowDesign;
+		font-size: rem(24);
+		text-transform: lowercase;
+		padding-left: 0;
+
+		@include breakpoint(laptop) {
+			padding-left: 90px;
+		}
+	}
+
+	&__subtitle{
+		text-transform: uppercase;
+		margin: 15px 0 5px;
+		font-size: rem(20);
+		font-family: $font__leagueGothic;
+	}
+
+	&__copy{
+		margin: 0;
+		font-size: rem(16);
+
+		@include breakpoint(mobileonly) {
+			font-size: rem(14);
+		}
+
+		a{
+			text-decoration: none;
+		}
+
+		b{
+			font-family: $font__yellowDesign;
+		}
+	}
+
+	&__copyright{
+		font-family: $font__leagueGothic;
+		text-transform: uppercase;
+		margin: 20px 0 0;
+		font-size: rem(14);
+	}
+
+	&__sitemap-list{
+		margin: 20px 0 0;
+		padding: 0;
+		list-style: none;
+
+		li{
+			margin-bottom: 5px;
+		}
+
+		a{
+			text-transform: uppercase;
+			text-decoration: none;
+			font-size: rem(20);
+			font-family: $font__leagueGothic;
+			line-height: 1;
+		}
+	}
+
+	&__social-list{
+		margin: 0 0 20px;
+		padding: 0;
+		list-style: none;
+
+		@include breakpoint(laptop) {
+			margin: 0;
+		}
+	}
+
+	&__social-list-item{
+		display: inline-block;
+		margin: 0 10px;
+
+		@include breakpoint(laptop) {
+			margin: 0 20px 0 0;
+		}
+	}
+
+	&__social-list-link{
+		text-decoration: none;
+	}
+
+	&__logo{
+		max-width: 35%;
+		margin-top: 20px;
+
+		@include breakpoint(phablet) {
+			max-width: 25%;
+			margin-top: 20px;
+		}
+
+		@include breakpoint(laptop) {
+			margin-top: 55px;
+		}
+	}
+}
+
+.site-info{
+	@include clearfix;
+	width: 100%;
+	text-align: center;
+
+	@include breakpoint(laptop) {
+		text-align: left;
+	}
+}

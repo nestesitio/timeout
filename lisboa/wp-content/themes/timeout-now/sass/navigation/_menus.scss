@@ -1,0 +1,288 @@
+.site-header{
+	text-align: center;
+	position: relative;
+	@include position(fixed, 0 null null 0);
+	@include size(100% 54px);
+	background: black;
+	z-index: 999;
+
+	& + .site-content{
+		padding-top: 54px;
+	}
+
+	&__right-holder{
+		@include position(absolute, 0 10px null null);
+		width: auto;
+		z-index: 999;
+		text-align: center;
+
+		@include breakpoint(desktop) {
+			right: 40px;
+			width: 100px;
+			background: black;
+		}
+
+		@include breakpoint(big-desktop) {
+			width: 125px;
+			right: 120px;
+		}
+	}
+}
+
+.site-branding{
+	display: none;
+	@include position(absolute, null null -144px 0);
+	@include transition(all .33s);
+
+	@include breakpoint(big-desktop) {
+		bottom: -181px;
+	}
+
+	&--hide{
+		bottom: 0;
+	}
+
+	@include breakpoint(desktop) {
+		display: block;
+	}
+
+	h1, p{
+		@include hide-text();
+		@include size(100px 144px);
+		background: url(img/timeout-market-lisboa.jpg) no-repeat top center;
+		background-size: contain;
+		margin: 0;
+
+		@include breakpoint(big-desktop) {
+			@include size(125px 181px);
+		}
+	}
+
+}
+
+.site-branding-mobile{
+	display: block;
+	float: right;
+	padding: 10px;
+	margin-left: 20px;
+
+	@include breakpoint(desktop) {
+		display: none;
+	}
+
+	img{
+		max-width: auto;
+		height: 50px;
+	}
+}
+
+#lang_sel_list{
+	width: auto;
+	background: black;
+	height: auto;
+	margin: 0;
+	padding: 10px 0;
+	float: left;
+
+	@include breakpoint(desktop) {
+		display: inline-block;
+		vertical-align: middle;
+		width: 100%;
+		float: none;
+	}
+
+	ul{
+		display: inline-block;
+
+		a{
+			position: relative;
+			font-size: rem(24);
+			color: white;
+			font-family: $font__yellowDesign;
+			text-transform: lowercase;
+			line-height: 1;
+			background: transparent;
+		}
+
+		a:visited{
+			color: white;
+		}
+
+		a:hover, a.lang_sel_sel:hover{
+			color: $color__blue-light;
+		}
+
+		a.lang_sel_sel{
+			color: white;
+			
+			&:after{
+				content: '';
+				@include size(6px);
+				border-radius: 50%;
+				background: white;
+				@include position(absolute, null null -10px 50%);
+				margin-left: -3px;
+			}
+		}
+	}
+
+	li{
+		margin: 0 5px !important;
+	}
+}
+
+.main-navigation {
+	display: block;
+	background: black;
+
+	@include breakpoint(desktop) {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+		padding: 15px 0;
+	}
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		padding-bottom: 20px;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 1.5em;
+			left: -999em;
+			z-index: 99999;
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+				width: 200px;
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+	
+	li {
+		width: 100%;
+		margin: 10px 0;
+
+		@include breakpoint(desktop) {
+			width: auto;
+			float: left;
+			position: relative;
+			margin: 0 20px;
+		}
+
+		&.menu-item-special{
+
+			a{
+				color: #e20909;
+
+				&:hover,
+				&:focus{
+					color: white;
+				}
+			}
+
+		}
+
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+	
+	a {
+		display: block;
+		text-decoration: none;
+		font-size: rem(24);
+		font-family: $font__leagueGothic;
+		text-transform: uppercase;
+		line-height: 1;
+
+		&:hover, &:focus{
+			color: $color__blue-light;
+		}
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+		color: $color__blue-light;
+	}
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+.main-navigation.toggled .menu-toggle-btn{
+	@include transform(rotate(-90deg));
+}
+
+.menu-toggle{
+	text-align: left;
+	padding: 20px;
+}
+
+.menu-toggle-btn{
+	@include transition(all .33s);
+}
+
+@media screen and (min-width: 70em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}

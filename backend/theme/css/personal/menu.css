@@ -1,0 +1,44 @@
+/* 
+    Created on : Nov 24, 2016, 5:17:25 PM
+    Author     : dellpinto
+*/
+.menu-layer{
+    padding: 0;
+}
+
+.header{ padding: 50px 0 0;}
+
+.menu-markets img {width: 100%; height: auto;}
+
+.menu-markets a.disabled{
+    pointer-events: none;
+    cursor: default;
+}
+
+.menu-markets a.disabled img{
+    opacity: 0.4;
+    filter: grayscale(100%);
+}
+
+.menu-item-link{
+    text-align: center;
+}
+.menu-item-description,
+.menu-item-description-disabled{
+    text-transform: uppercase;
+}
+
+.menu-item-description-disabled{
+    opacity: 0.4;
+}
+.timeout-choose{
+    text-transform: uppercase; font-size: 3.7em; margin: 15px 0 5px;
+}
+a.menu-makets img{
+    opacity: 0.7;
+    transition: opacity .25s ease-in-out;
+}
+a.menu-makets:hover img{
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+}

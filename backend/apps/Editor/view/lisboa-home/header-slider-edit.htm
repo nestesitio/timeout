@@ -1,0 +1,26 @@
+<div style="min-height:  600px">
+    <form id="form-zone-header">
+        <div class="container-fluid zone-form" style="padding: 50px 10px 60px;">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="zone-item zone-item-image zone-full-image">
+                        {$zone-header-image}
+                        {$zone-header-image-filename}
+                    </div>
+                    <div class="zone-item zone-item-title">{$zone-header-title}</div>
+                    <div class="zone-item zone-item-text">{$zone-header-status}</div>
+                </div>
+                <div class="col-sm-5">
+                    {$zone-header-id}
+                    <div class="zone-item zone-item-text">{$zone-header-text}</div>
+                    <div class="zone-item zone-item-image">
+                        {$zone-header-image-attached}
+                        {$zone-header-image-attached-filename}
+                    </div>
+                </div>
+            </div>
+            
+            {@include 'Editor/view/slider-buttons.htm'}
+        </div>
+    </form>
+</div>

@@ -1,0 +1,464 @@
+.concept{
+
+	&__header{
+		margin-bottom: 20px;
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		//padding-bottom: 75%; /* 4:3 */
+		padding-top: 25px;
+		height: 0;
+
+		@include breakpoint(tablet) {
+			margin-bottom: 40px;
+		}
+
+		@include breakpoint(desktop) {
+			margin-bottom: 60px;
+		}
+
+		@include breakpoint(big-desktop) {
+			margin-bottom: 80px;
+		}
+
+		@include breakpoint(large-desktop) {
+			margin-bottom: 100px;
+		}
+
+		img{
+			width: 100%;
+			display: block;
+		}
+
+		iframe{
+			@include size(100% 100%);
+			@include position(absolute, 0 auto auto 0);
+		}
+
+	}
+
+	&__intro{
+		@include clearfix;
+	}
+
+	&__title{
+		font-size: rem(40);
+		font-family: $font__leagueGothic;
+		text-transform: uppercase;
+		margin: 0 0 20px;
+		line-height: 1;
+		padding: 0 20px;
+
+		@include breakpoint(laptop) {
+			font-size: rem(60);
+			margin-bottom: 0;
+			padding: 0 0 0 60px;
+		}
+
+		@include breakpoint(desktop) {
+			font-size: rem(80);
+		}
+
+		@include breakpoint(big-desktop) {
+			font-size: rem(100);
+		}
+
+		@include breakpoint(large-desktop) {
+			font-size: rem(135);
+		}
+	}
+
+	&__description{
+		padding: 0 20px;
+
+		@include breakpoint(laptop) {
+			padding: 0;
+		}
+
+		p{
+			font-size: rem(15);
+			margin-bottom: 0;
+
+			&:first-child{
+				margin-top: 0;
+			}
+
+			@include breakpoint(desktop) {
+				font-size: rem(18);
+			}
+
+			@include breakpoint(large-desktop) {
+				font-size: rem(20);
+			}
+		}
+
+		&--highlight{
+			margin-top: 20px;
+
+			@include breakpoint(laptop) {
+				padding: 0 50px;
+				margin-top: 0;
+			}
+			
+			p{
+				font-size: rem(18);
+				line-height: 1.25;
+				color: $color__blue-light;
+
+				@include breakpoint(laptop) {
+					font-size: rem(22);
+				}
+
+				@include breakpoint(desktop) {
+					font-size: rem(25);
+				}
+
+				@include breakpoint(big-desktop) {
+					font-size: rem(30);
+				}
+
+				@include breakpoint(large-desktop) {
+					font-size: rem(35);
+				}
+			}
+		
+
+		}
+
+	}
+
+	&__timeline{
+		position: relative;
+		margin-top: 20px;
+
+		@include breakpoint(phablet) {
+			border-bottom: 2px dashed white;
+			margin-top: 50px;
+			padding-bottom: 50px;
+			margin-bottom: 50px;
+		}
+
+		@include breakpoint(laptop) {
+			
+		}
+
+		@include breakpoint(desktop) {
+			
+		}
+
+		@include breakpoint(big-desktop) {
+			
+		}
+
+		@include breakpoint(large-desktop) {
+		}
+		
+		@include breakpoint(big-desktop) {
+			
+		}
+
+		&-pig{
+			display: none;			
+
+			@include breakpoint(phablet) {
+				display: block;
+				@include size(100% 63px);
+				@include position(absolute, null null -33px 0);
+			}
+
+			@include breakpoint(laptop) {
+				
+			}
+
+			@include breakpoint(desktop) {
+				
+			}
+
+			@include breakpoint(big-desktop) {
+				
+			}
+
+			@include breakpoint(large-desktop) {
+				
+			}
+
+			.handle{
+				background: url(img/pig.png) no-repeat center center;
+				background-size: contain;
+				@include size(100px 63px);
+
+				@include breakpoint(phablet) {
+
+				}
+
+				@include breakpoint(laptop) {
+					
+				}
+
+				@include breakpoint(desktop) {
+					
+				}
+
+				@include breakpoint(big-desktop) {
+					
+				}
+
+				@include breakpoint(large-desktop) {
+					
+				}
+			}
+		}
+
+	}
+
+	&__timeline-title,
+	&__timeline-subtitle{
+		text-align: center;
+		font-size: rem(30);
+		line-height: 1;
+		margin: 0;
+		padding: 0 20px;
+
+		@include breakpoint(laptop) {
+			font-size: rem(50);
+			padding: 0;
+		}
+
+		@include breakpoint(desktop) {
+			font-size: rem(70);
+		}
+
+		@include breakpoint(big-desktop) {
+			font-size: rem(90);
+		}
+
+		@include breakpoint(large-desktop) {
+			//font-size: rem(108);
+		}
+	}
+
+	&__timeline-title{
+		font-family: $font__leagueGothic;
+		color: white;
+		text-transform: uppercase;
+	}
+
+	&__timeline-subtitle{
+		font-family: $font__yellowDesign;
+		font-weight: 900;
+		color: $color__blue-light;
+	}
+
+	&__timeline-holder{
+		@include size(100% auto);
+		margin: 20px 0;
+		position: relative;
+
+		@include breakpoint(phablet) {
+			height: 400px;
+			margin: 60px 0;
+			overflow: hidden;
+		}
+
+		@include breakpoint(laptop) {
+			height: 500px;
+		}
+
+		@include breakpoint(desktop) {
+			height: 600px;
+		}
+
+		@include breakpoint(big-desktop) {
+			height: 600px;
+		}
+
+		@include breakpoint(large-desktop) {
+			
+		}
+	}
+
+	&__timeline-wrapper{
+		
+		@include breakpoint(phablet) {
+			@include size(100% 100%);
+			@include position(absolute, 0 null null 0);	
+		}
+	}
+
+	&__timeline-item{
+		position: static;
+		
+		@include breakpoint(phablet) {
+			@include position(absolute, 0 null null 0);
+			@include size(300px 100%);
+
+			&:last-of-type{
+
+				&:after{
+					@include position(absolute, null 0 0 null);
+					@include size(5px 70%);
+					background: white;
+					content: ' ';
+					z-index: 1;
+				}
+
+				.concept__timeline-item-top,
+				.concept__timeline-item-bottom{
+					padding-right: 5px;
+				}
+			}
+
+			&.s{
+
+				&:before{
+					height: 100%;
+				}
+				
+			}
+
+			&:before{
+				@include position(absolute, null null 0 0);
+				@include size(5px 70%);
+				background: white;
+				content: ' ';
+				z-index: 1;
+			}
+
+		}
+
+		@include breakpoint(laptop) {
+			width: 375px;
+		}
+
+		@include breakpoint(desktop) {
+			
+		}
+
+		@include breakpoint(big-desktop) {
+			width: 400px;
+		}
+
+		@include breakpoint(large-desktop) {
+			width: 450px;
+		}
+
+	}
+
+	&__timeline-item-top{
+
+		@include breakpoint(phablet) {
+			@include position(absolute, 0 null null 0);
+			@include size(100% 50%);
+			padding-left: 5px;
+			overflow: hidden;
+		}
+	}
+
+	&__timeline-item-bottom{
+
+		@include breakpoint(phablet) {
+			border-top: 29px solid transparent;
+			@include position(absolute, null null 0 0);
+			@include size(100% 50%);
+			padding-left: 5px;
+			overflow: hidden;
+		}
+		
+	}
+
+	&__timeline-item-image{
+		display: none;
+		width: 100%;
+
+		@include breakpoint(phablet) {
+			margin-top: 20px;
+			display: block;
+		}
+
+		@include breakpoint(laptop) {
+			margin-top: 65px;
+		}
+
+		@include breakpoint(desktop) {
+			
+		}
+
+		@include breakpoint(big-desktop) {
+			margin-top: 50px;
+		}
+
+		@include breakpoint(large-desktop) {
+			margin-top: 65px;
+		}
+	}
+
+	&__timeline-item-year{
+		font-family: $font__yellowDesign;
+		font-weight: 400;
+		font-size: rem(20);
+		color: $color__blue-light;
+		margin: 20px 0 10px;
+		line-height: 1;
+		padding: 0 20px;
+
+		@include breakpoint(laptop) {
+			font-size: rem(30);
+		}
+
+		@include breakpoint(desktop) {
+			
+		}
+
+		@include breakpoint(big-desktop) {
+			font-size: rem(40);
+		}
+
+		@include breakpoint(large-desktop) {
+			
+		}
+	}
+
+	&__timeline-item-title{
+		font-family: $font__leagueGothic;
+		font-size: rem(25);
+		text-transform: uppercase;
+		margin: 0;
+		line-height: 1;
+		padding: 0 20px;
+
+		@include breakpoint(laptop) {
+			font-size: rem(30);
+		}
+
+		@include breakpoint(desktop) {
+			
+		}
+
+		@include breakpoint(big-desktop) {
+			font-size: rem(50);
+		}
+
+		@include breakpoint(large-desktop) {
+			
+		}
+	}
+
+	&__timeline-item-description{
+		padding: 0 20px;
+
+		p{
+			margin: 0;
+			font-size: rem(15);
+
+			@include breakpoint(desktop) {
+				font-size: rem(18);
+			}
+
+			@include breakpoint(large-desktop) {
+				font-size: rem(20);
+			}
+
+		}
+
+	}
+
+}

@@ -1,0 +1,32 @@
+.col{
+	@include column;
+	position: relative;
+
+	&--two{
+		@include column-two;
+
+		&--mobile{
+			@include column-two-mobile;
+		}
+	}
+
+	&--three{
+		@include column-three;
+	}
+
+	&--padding-left-big{
+		padding-left: 0;
+
+		@include breakpoint(laptop) {
+			padding-left: 90px;
+		}
+	}
+
+	&--padding{
+		padding: 20px;
+
+		@include breakpoint(laptop) {
+			padding: 20px 40px;
+		}
+	}
+}

@@ -1,0 +1,94 @@
+{@extends 'config:frontend'}
+
+{@block name='css'}
+<link href="/backend/theme/css/personal/timeout-style.css" rel="stylesheet">
+<link href="/backend/theme/css/base/jquery-ui.css" rel="stylesheet">
+<link href="/backend/theme/plugins/bootstrap-datetimepicker/datetimepicker.css" rel="stylesheet">
+<link href="/backend/theme/plugins/chosen/chosen.css" rel="stylesheet">
+<link href="/backend/theme/plugins/fileinput/css/fileinput.css" rel="stylesheet">
+<link href="/backend/theme/css/personal/editor.css" rel="stylesheet">
+<link href="/backend/theme/css/personal/eatshop.css" rel="stylesheet">
+{@endblock}
+
+{@block name='js'}
+<script src="/backend/theme/js/base/jquery-ui.js"></script>
+<script src="/backend/theme/js/core/core.js"></script>
+<script src="/backend/theme/js/core/bsInputs.js"></script>
+<script src="/backend/theme/plugins/bootstrap-datetimepicker/moment.min.js"></script>
+<script src="/backend/theme/plugins/bootstrap-datetimepicker/datetimepicker.js"></script>
+<script src="/backend/theme/plugins/bootstrap-datetimepicker/pt.js"></script>
+<script src="/backend/theme/plugins/bootstrap-datetimepicker/moment.parseFormat.js"></script>
+<script src="/backend/theme/js/personal/personal.js"></script>
+<script src="/backend/theme/js/personal/slider-sort.js"></script>
+
+<script src="/backend/theme/plugins/chosen/chosen.jquery.min.js"></script>
+<script src="/backend/theme/plugins/jeditable/jquery.jeditable.js"></script>
+<script src="/backend/theme/plugins/fileinput/js/fileinput.js"></script>
+
+{@endblock}
+
+{@include 'Editor/view/menu.htm'}
+
+<div id="main-content" style="margin-top: 50px;">
+    <div class="container-fluid editor-page">
+
+        <div class="row" style="min-height: 500px;">
+            <div id="shop-zone" class="editor-zone" style="padding: 0 10px 10px">
+                {@include 'Editor/view/shops/edit-shop.htm'}
+            </div>
+        </div> 
+
+
+        {@include 'Editor/view/lisboa-home/footer.htm'}
+
+    </div>
+</div>
+
+<!--Modal-->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document" id="modal-page" style="background-color: #333;">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 id="modal-title"></h2>
+        </div>
+        <div class="modal-body" id="modal-body"></div>
+        <div class="modal-footer">
+            <div class="modal-buttons">
+                <ul class="nav navbar-nav navbar-zone">
+                    <li class="menu-edit-tools">
+                        <a data-dismiss="modal" class="btn-edit-close">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <br />Close
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{@block name='scripts'}
+<script>
+    $(document).on('click', '.save-button', function () {
+        var parent = $(this).closest(".editor-zone");
+        setAction(this, parent);
+    });
+
+    $(function () {
+        prepareBSInputs();
+        toEdit();
+    });
+
+    var lang = "pt";
+    $(document).ajaxComplete(function () {
+        prepareBSInputs();
+        toEdit();
+    });
+
+
+
+
+
+
+</script>
+{@endblock}

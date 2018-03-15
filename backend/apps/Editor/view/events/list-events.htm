@@ -1,0 +1,117 @@
+{@while ($item in $list):}
+<div class="row list-item">
+    <div class="container-fluid event-row">
+
+        <div class="row">
+            <div class="col-sm-6">
+
+                <div class="zone-item zone-item-category">
+                    {$item.category}
+                </div>
+                <div class="zone-item zone-item-title">
+                    {$item.title}
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="zone-item zone-item-date icon icon-date-2">
+                                {$item.date}
+                            </div>
+                            <div class="zone-item zone-item-duration icon icon-duracao-1">
+                                {$item.duration}
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="zone-item zone-item-hour icon icon-tempo">
+                                {$item.hour}
+                            </div>
+                            <div class="zone-item zone-item-price icon icon-custo-2">
+                                {$item.price}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="zone-item zone-item-text">
+                    <label for="post-text">Text</label>
+                    <br />
+                    {$item.text}
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+
+                <div class="zone-item zone-item-image zone-full-image">
+                    {$item.image}
+                    <br />
+                    {$item.image-filename}
+                </div>
+                
+                <div class="zone-item zone-item-tickets">
+                    <label for="post-tickets">Tickets</label>
+                    <br />
+                    <a target="_blank" href="{$item.tickets}">{$item.tickets}</a>
+                </div>
+                
+                <div class="zone-item zone-item-color" style="background-color:{$item.color};">
+                    <label for="post-color">Color</label>
+                    {$item.color}
+                </div>
+                
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6 zone-item zone-item-status">
+                            <label for="post-status">Status</label>
+                            {$item.status}
+                        </div>
+                        <div class="col-sm-6 zone-item zone-item-expire">
+                            <label for="post-expire">Expiration date</label>
+                            {$item.expire}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="zone-item zone-item-id">{$item.id}</div>
+
+                <div id="data-id" style="display: none">{$data-id}</div>
+
+            </div>
+        </div>
+
+        <div class="row-buttons">
+            <ul class="nav navbar-nav navbar-zone">
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-edit" 
+                       data-action="/editor/edit_events/{$item.data-id}/?js=1&zone={$item.zone}">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Edit
+                    </a>
+                </li>
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-undo {$item.disable}" 
+                       data-action="/editor/undo_events/{$item.data-id}/?js=1&zone={$item.zone}">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Undo
+                    </a>
+                </li>
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-save {$item.disable}" 
+                       data-action="/editor/save_events/{$item.data-id}/?js=1&zone={$item.zone}">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Save
+                    </a>
+                </li>
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-delete {$item.disable}" 
+                       data-action="/editor/delete_events/{$item.data-id}/?js=1&zone={$item.zone}">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Remove
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+{@endwhile;}

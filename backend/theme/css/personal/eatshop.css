@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 20, 2017, 5:20:48 PM
+    Author     : dellpinto
+*/
+.shop-row{
+    padding-left: 0; padding-right: 0;
+}
+.list-item{
+    border-bottom: none;
+}
+
+.shop-filter {
+    background: #0068ac none repeat scroll 0 0;
+    border: medium none; border-radius: 50%; box-shadow: none; outline: medium none;
+    color: white; font-family: "LeagueGothic";
+    display: block;
+    font-size: 2em;
+    width: 80px; height: 80px; line-height: 80px;
+    margin: 20px;padding: 0; text-align: center;
+    text-shadow: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease 0s;
+    
+}
+
+.shop-header-filters{
+    position: absolute; bottom: 100px; right: 50px; text-align: center;
+}
+
+.shop-row .zone-item-space-number{
+    text-align: right; padding-right: 10px; line-height: 0.9em;
+}
+.zone-item-title{line-height: 1;}
+.shop-row .zone-item-text{
+    min-height: 80px !important; overflow: hidden; 
+    margin: 20px 0; padding-right: 20px;
+    font-size: 1.4em;
+}
+
+#form-top-eatshop .zone-item{ text-align: left;}
+
+.shop-row .zone-full-image {
+    margin-bottom: 50px;
+}
+
+.shop-row .zone-item-space-number {
+    font-size: 4em; color: #00aae5; font-family: "YellowDesign";
+}
+
+.shop-row .zone-item-text {
+    min-height: 50px; margin: 20px 0;
+}
+
+.shop-row .zone-full-image {
+    margin-bottom: 50px;
+}
+
+.form-shop .zone-full-image{margin-bottom: 0;}
+
+.zone-item-space-number input{font-size: 0.8em;}
+.zone-item-category .chosen-container{font-size: 1.0em;}
+.form-inline input,
+.form-inline select
+{ width: 75% !important; float: right;}
+.form-shop .zone-item-text,
+.form-shop .zone-item-text-title
+{text-align: left;}
+
+.form-shop .zone-item-text input,
+.form-shop .zone-item-text textarea
+{text-transform: none;}
+
+[name='post-text']{font-size: 0.9em; font-family: "timeout","Times New Roman","Georgia",serif; line-height: 1.2;}
+[name='post-title']{font-size: 0.8em}
+[name='post-recipe-title']{font-size: 1.3em !important}
+[name='post-recipe-description']{font-size: 0.9em}
+[name='post-recipe-ingredients']{
+    font-size: 1.5em; text-transform: capitalize; line-height: 1.2; font-family: "LeagueGothic" !important;
+}

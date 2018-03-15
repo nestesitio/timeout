@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <show>
+    <fields comment="Fields for render">
+      <htmid field="htm.id" show="false" filter="false">
+        <label key="id" />
+      </htmid>
+      <htmhtmappid field="htm.htm_app_id" range="multiple" show="false" filter="true">
+        <label lang="en">Htm App Id</label>
+        <label lang="pt">Htm App Id</label>
+      </htmhtmappid>
+      <htmhasvarshtmvarsid field="htm_has_vars.htm_vars_id" show="true" filter="false">
+        <label lang="en">Htm Vars Id</label>
+        <label lang="pt">Tag</label>
+      </htmhasvarshtmvarsid>
+      <htmhasvarshtmid field="htm_has_vars.htm_id" show="false" filter="false">
+        <label lang="en">Htm Id</label>
+        <label lang="pt">Htm Id</label>
+      </htmhasvarshtmid>
+      <htmstat field="htm.stat" show="true" filter="true">
+        <label lang="en">Stat</label>
+        <label lang="pt">Stat</label>
+      </htmstat>
+      <htmord field="htm.ord" show="true" filter="true">
+        <label lang="en">Ord</label>
+        <label lang="pt">Ord</label>
+      </htmord>
+      <htmvarsvar field="htm_vars.var" show="false" filter="false">
+        <label lang="en">Variable</label>
+        <label lang="pt">Variável</label>
+      </htmvarsvar>
+      <htmvarsvalue field="htm_vars.value" show="false" filter="false">
+        <label lang="en">Anchor</label>
+        <label lang="pt">Ancora</label>
+      </htmvarsvalue>
+    </fields>
+    <buttons comment="Commands for form and show">
+      <saveform class="glyphicon glyphicon-save" action="core/edit_htm" auth="4">
+        <label key="save" />
+      </saveform>
+      <editform class="glyphicon glyphicon-pencil" action="core/edit_htm" auth="1">
+        <label key="edit" />
+      </editform>
+      <delform class="glyphicon glyphicon-trash" action="core/del_htm" auth="1">
+        <label key="delete" />
+      </delform>
+      <closeform class="glyphicon glyphicon-remove" auth="4">
+        <label key="close" />
+      </closeform>
+    </buttons>
+  </show>
+  <grid identification="htm" paging="25" fieldid="htm.id">
+    <columns comment="Columns for grid">
+      <htmid field="htm.id" class="id" sort="true">
+
+        <label key="id" />
+      </htmid>
+      <htmstat field="htm.stat" class="stat" sort="true">
+        <label lang="en">Stat</label>
+        <label lang="pt">Stat</label>
+      </htmstat>
+      <htmord field="htm.ord" class="ord" sort="true">
+        <label lang="en">Ord</label>
+        <label lang="pt">Ord</label>
+      </htmord>
+    </columns>
+    <tools comment="buttons in row">
+      <edit action="core/edit_htm" class="fa-pencil" id="htm.id" auth="1">
+
+        <label key="edit" />
+      </edit>
+      <show action="core/show_htm" class="fa-eye" id="htm.id" auth="1">
+
+        <label key="show" />
+      </show>
+      <del action="core/del_htm" class="fa-trash-o" id="htm.id" auth="1">
+
+        <label lang="pt">Del</label>
+      </del>
+    </tools>
+    <buttons comment="buttons ion top">
+      <new action="core/new_htm" class="glyphicon glyphicon-plus" auth="1">
+
+        <label key="insert" />
+      </new>
+      <export url="/core/export_htm" class="glyphicon glyphicon-export" auth="1">
+
+        <label key="export" />
+      </export>
+    </buttons>
+  </grid>
+</root>

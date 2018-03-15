@@ -1,0 +1,53 @@
+<div class="container-fluid event-row">
+    {@while ($item in $list):}
+
+    <div class="row">
+       <div class="col-sm-1">
+                <div class="zone-item zone-item-image zone-full-image">
+                    <img src="{$item.src}" />
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="zone-item zone-item-title">
+                    {$item.title}
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="zone-item zone-item-tickets">
+                    <label for="post-tickets">Link</label>
+                    <a target="_blank" href="{$item.link}">{$item.link}</a>
+                </div>
+            </div>
+        <div id="data-id" style="display: none">{$data-id}</div>
+
+
+    </div>
+
+    <div class="row-buttons">
+        <ul class="nav navbar-nav navbar-zone">
+            <li class="menu-edit-tools">
+                <a class="btn-edit-edit" 
+                   data-action="/editor/edittransport_gethere/{$item.data-id}/?js=1&zone=transport">
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                    <br />Edit
+                </a>
+            </li>
+            <li class="menu-edit-tools">
+                <a class="btn-edit-undo {$item.disable}" 
+                   data-action="/editor/undotransport_gethere/{$item.data-id}/?js=1&zone=transport">
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                    <br />Undo
+                </a>
+            </li>
+            <li class="menu-edit-tools">
+                <a class="btn-edit-save {$item.disable}" 
+                   data-action="/editor/savetransport_gethere/{$item.data-id}/?js=1&zone=transport">
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                    <br />Save
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    {@endwhile;}
+</div>

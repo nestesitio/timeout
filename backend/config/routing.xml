@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <route name="login" url="user/login">
+        <controller class="User/Login" />
+        <access group="all" />
+    </route>
+    <route name="home" url="home/home">
+        <controller class="Home/Menu" />
+        <access group="editor" redirect="/backend/user/login" />
+    </route>
+    <route name="menu" url="home/menu">
+        <controller class="Home/Menu" />
+        <access group="editor" redirect="/backend/" />
+    </route>
+    <route name="lisboa" url="editor/lisboa">
+        <controller class="Editor/Lisboa" />
+        <access group="editor" redirect="/backend/" />
+    </route>
+    <route name="slider" url="editor/slider">
+        <controller class="Editor/Slider" />
+        <access group="editor" redirect="/backend/" />
+    </route>
+    <route name="footer" url="editor/footer">
+        <controller class="Editor/Footer" />
+        <access group="editor" redirect="/backend/" />
+    </route>
+    <route name="events" url="editor/events">
+        <controller class="Editor/Events" />
+        <access group="editor" redirect="/backend/" />
+    </route>
+    <route name="academy" url="editor/academy">
+        <controller class="Editor/Academy" />
+        <access group="editor" redirect="/backend/editor/lisboa" />
+    </route>
+    <route name="studio" url="editor/studio">
+        <controller class="Editor/Studio" />
+        <access group="editor" redirect="/backend/editor/lisboa" />
+    </route>
+    <route name="eatshop" url="editor/eatshop">
+        <controller class="Editor/Eatshop" />
+        <access group="editor" redirect="/backend/editor/lisboa" />
+    </route>
+    <route name="shops" url="editor/shops">
+        <controller class="Editor/Shops" />
+        <access group="editor" redirect="/backend/editor/lisboa" />
+    </route>
+    <route name="eatshop" url="editor/calendar">
+        <controller class="Editor/Calendar" />
+        <access group="editor" redirect="/backend/editor/lisboa" />
+    </route>
+    <route name="gethere" url="editor/gethere">
+        <controller class="Editor/Gethere" />
+        <access group="editor" redirect="/backend/editor/lisboa" />
+    </route>
+    <route name="themarket" url="editor/themarket">
+        <controller class="Editor/Themarket" />
+        <access group="editor" redirect="/backend/editor/lisboa" />
+    </route>
+</root>

@@ -1,0 +1,376 @@
+.eat-and-shop-archive-header{
+	position: relative;
+	padding-top: 0;
+
+	@include breakpoint(laptop){
+		//padding-top: 200px;
+		padding-top: 0;
+	}
+
+	&__info{
+		padding: 20px;
+
+		@include breakpoint(phablet){
+			max-width: 75%;
+		}
+
+		@include breakpoint(laptop) {
+			width: 30%;
+			max-width: auto;
+			@include position(absolute, 50px auto auto 50px);
+		}
+	}
+
+	&__subtitle{
+		margin: 0;
+		color: $color__blue-light;
+		font-size: rem(25);
+		font-family: $font__yellowDesign;
+		line-height: 1;
+
+		@include breakpoint(big-desktop) {
+			font-size: rem(30);
+		}
+
+		@include breakpoint(large-desktop) {
+			font-size: rem(37);
+		}
+	}
+
+	&__title{
+		margin: 15px 0;
+		font-size: rem(35);
+		font-family: $font__leagueGothic;
+		line-height: 1;
+		text-transform: uppercase;
+
+		@include breakpoint(laptop) {
+			font-size: rem(50);
+		}
+
+		@include breakpoint(desktop) {
+			font-size: rem(70);
+		}
+
+		@include breakpoint(big-desktop) {
+			font-size: rem(90);
+		}
+
+		@include breakpoint(large-desktop) {
+			font-size: rem(117);
+			margin: 30px 0;
+		}
+	}	
+
+	&__description{
+		margin: 0;
+		font-size: rem(15);
+
+		@include breakpoint(desktop) {
+			font-size: rem(18);
+		}
+
+		@include breakpoint(large-desktop) {
+			font-size: rem(20);
+		}
+	}
+
+	&__image{
+		width: 100%;
+		display: block;
+
+		@include breakpoint(laptop) {
+			width: 90%;
+			margin-left: 10%;
+		}
+	}
+
+	&__filters{
+		text-align: center;
+
+		@include breakpoint(phablet) {
+			@include position(absolute, null 5% 5% null);
+		}
+	}
+
+	&__filter{
+		@include size(80px);
+		line-height: 80px;
+		border-radius: 50%;
+		display: inline-block;
+		padding: 0;
+		margin: 0 10px;
+		text-align: center;
+		border: none;
+		box-shadow: none;
+		font-size: rem(30);
+		font-family: $font__leagueGothic;
+		text-transform: uppercase;
+		color: white;
+		background: $color__blue;
+		outline: none;
+		text-shadow: none;
+		@include transition(all .2s);
+
+		@include breakpoint(phablet) {
+			@include size(100px);
+			line-height: 100px;
+			font-size: rem(40);
+			display: block;
+			margin: 0 0 20px;
+		}
+
+		@include breakpoint(desktop) {
+			@include size(125px);
+			line-height: 125px;
+			font-size: rem(55);
+		}
+
+		&:hover,
+		&:focus,
+		&--active{
+			background: $color__blue-light;
+			box-shadow: none;
+			border: none;
+			outline: none;
+		}
+	}
+
+}
+
+.eat-and-shop-archive{
+	width: 100%;
+	float: left;
+	margin: 0;
+	padding-top: 20px;
+	@include clearfix;
+
+	@include breakpoint(laptop) {
+		width: 50%;
+		padding-top: 60px;
+	}
+
+	&:hover{
+
+		.eat-and-shop-archive__image{
+			@include transform( scale(1.05) );
+		}
+
+	}
+
+	&__col{
+		width: 80%;
+		float: left;
+		padding-right: 20px;
+
+		@include breakpoint(laptop) {
+			width: 70%;
+		}
+
+		&:first-child{
+			width: 20%;
+			text-align: right;
+			padding-right: 20px;
+
+			@include breakpoint(laptop) {
+				width: 30%;
+			}
+		}
+	}
+
+	&__number{
+		margin: 0;
+		color: $color__blue-light;
+		font-size: rem(30);
+		font-family: $font__yellowDesign;
+		line-height: 1;
+		@include position(relative, -4px auto auto auto);
+
+		@include breakpoint(laptop) {
+			font-size: rem(35);
+		}
+
+		@include breakpoint(big-desktop) {
+			font-size: rem(45);
+			top: -5px;
+		}
+
+		@include breakpoint(large-desktop) {
+			font-size: rem(60);
+		}
+	}
+
+	&__title{
+		margin: 0;
+		font-size: rem(25);
+		font-family: $font__leagueGothic;
+		text-transform: uppercase;
+		line-height: 1;
+		color: white;
+
+		@include breakpoint(laptop) {
+			font-size: rem(30);
+		}
+
+		@include breakpoint(big-desktop) {
+			font-size: rem(40);
+		}
+
+		@include breakpoint(large-desktop) {
+			font-size: rem(55);
+		}
+	}
+
+	&__subtitle{
+		margin: 5px 0 0;
+		font-size: rem(15);
+		color: white;
+
+		@include breakpoint(laptop) {
+			min-height: 90px;
+		}
+
+
+		@include breakpoint(desktop) {
+			font-size: rem(18);
+			min-height: 110px;
+		}
+
+		@include breakpoint(big-desktop) {
+			font-size: rem(20);
+			min-height: 90px;
+		}
+	}
+
+	&__image-wrapper{
+		overflow: hidden;
+		margin-bottom: 20px;
+	}
+
+	&__image{
+		width: 100%;
+		display: block;
+		@include transition(all .33s);
+	}
+
+}
+
+.eat-and-shop-single{
+	margin: 0;
+
+	&__col{
+		
+		@include breakpoint(tablet) {
+			display: inline-block;
+			width: 50%;
+			vertical-align: top;
+		}
+
+		&--top{
+			vertical-align: top;
+		}
+
+		&--pad{
+			padding: 0 20px;
+
+			@include breakpoint(tablet) {
+				width: 49%;
+				padding: 0 20px;
+			}
+
+			@include breakpoint(desktop) {
+				padding: 0 30px;
+			}
+
+			@include breakpoint(big-desktop) {
+				padding: 0 40px;
+			}
+
+			@include breakpoint(large-desktop) {
+				padding: 0 60px;
+			}
+		}
+	}
+
+	&__image--desktop{
+		display: none;
+
+		@include breakpoint(tablet) {
+			display: block;
+		}
+	}
+
+	&__image--mobile{
+		display: block;
+
+		@include breakpoint(tablet) {
+			display: none;
+		}
+	}
+
+	&__title{
+		font-size: rem(35);
+		font-family: $font__leagueGothic;
+		text-transform: uppercase;
+		line-height: 1;
+		margin: 0 0 20px;
+
+		@include breakpoint(laptop) {
+			font-size: rem(50);
+		}
+
+		@include breakpoint(desktop) {
+			font-size: rem(70);
+		}
+
+		@include breakpoint(big-desktop) {
+			font-size: rem(90);
+		}
+
+		@include breakpoint(large-desktop) {
+			font-size: rem(117);
+		}
+	}
+
+	&__subtitle{
+		font-size: rem(30);
+		font-family: $font__yellowDesign;
+		color: $color__blue-light;
+		font-weight: 900;
+		margin: 20px 0 0;
+
+		@include breakpoint(laptop) {
+			font-size: rem(40);
+			margin: 0;
+		}
+
+		@include breakpoint(desktop) {
+			font-size: rem(50);
+		}
+
+		@include breakpoint(big-desktop) {
+			font-size: rem(60);
+		}
+
+		@include breakpoint(large-desktop) {
+			font-size: rem(70);
+		}
+	}
+
+	&__description{
+
+		p{
+			font-size: rem(15);
+
+			@include breakpoint(desktop) {
+				font-size: rem(18);
+			}
+
+			@include breakpoint(large-desktop) {
+				font-size: rem(20);
+			}
+
+		}
+	}
+
+}

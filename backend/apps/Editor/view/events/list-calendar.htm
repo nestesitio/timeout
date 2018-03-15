@@ -1,0 +1,55 @@
+{@while ($item in $list):}
+<div class="row list-item-calendar">
+    <div class="container-fluid event-row">
+
+        <div class="row">
+            <div class="col-sm-6">
+
+                <div class="zone-item zone-item-image zone-full-image">
+                    {$item.image}
+                    <br />
+                    {$item.image-filename}
+                </div>
+                
+
+            </div>
+            <div class="col-sm-6">
+
+                <div class="zone-item zone-item-category">
+                    {$item.category}
+                </div>
+                <div class="zone-item zone-item-title">
+                    {$item.title}
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="zone-item zone-item-date icon icon-date-2">
+                                {$item.date}
+                            </div>
+                            <div class="zone-item zone-item-duration icon icon-duracao-1">
+                                {$item.duration}
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="zone-item zone-item-hour icon icon-tempo">
+                                {$item.hour}
+                            </div>
+                            <div class="zone-item zone-item-price icon icon-custo-2">
+                                {$item.price}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="zone-item zone-item-text">[...]</div>
+
+            </div>
+            
+        </div>
+
+
+    </div>
+</div>
+{@endwhile;}

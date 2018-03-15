@@ -1,0 +1,47 @@
+<div class="container-fluid zone-form" style="padding-bottom: 25px">
+    <form id="form-top-event">
+        <div class="row">
+            <div class="col-sm-6">
+                
+                 <div class="zone-item zone-item-header">{$zone-gethere-header}</div>
+
+                <div class="zone-item zone-item-title">{$zone-gethere-title}</div>
+                
+                <div class="zone-item zone-item-map" style="font-size: 2em; font-family:'Open', sans-serif; text-align: center;">MAP (not editable)</div>
+                
+                <div class="zone-item zone-item-footer-title">{$zone-gethere-footer-title}</div>
+
+            </div>
+        </div>
+
+
+        <div class="zone-buttons">
+            <ul class="nav navbar-nav navbar-zone">
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-edit" 
+                       data-action="/editor/edit_gethere/{$zone-gethere-id}/?zone=gethere">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Edit
+                    </a>
+                </li>
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-undo {$zone-gethere-disable}" 
+                       data-action="/editor/undo_gethere/{$zone-gethere-id}/?zone=gethere">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Undo
+                    </a>
+                </li>
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-save {$zone-gethere-disable}" 
+                       data-action="/editor/save_gethere/{$zone-gethere-id}/?zone=gethere">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Save
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </form>
+
+</div>
+

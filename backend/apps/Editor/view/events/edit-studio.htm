@@ -1,0 +1,118 @@
+<div class="container-fluid event-row">
+    <form id="form-edit-studio">
+
+        <div class="row">
+            <div class="col-sm-6">
+
+                <div class="zone-item zone-item-category">
+                    <label for="post-category">Category</label>
+                    {$zone-studio-header}
+                </div>
+
+                <div class="zone-item zone-item-title">
+                    <label for="post-title">Title</label>
+                    {$zone-studio-title}
+                </div>
+
+
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="zone-item zone-item-date icon icon-date-2">
+                                {$zone-studio-date}
+                            </div>
+                            <div class="zone-item zone-item-duration icon icon-duracao-1">
+                                {$zone-studio-duration}
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="zone-item zone-item-hour icon icon-tempo">
+                                {$zone-studio-hour}
+                            </div>
+                            <div class="zone-item zone-item-price icon icon-custo-2">
+                                {$zone-studio-price}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="zone-item zone-item-text">
+                    <label for="post-text">Text</label>
+                    {$zone-studio-text}
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+
+                <div class="zone-item zone-item-image zone-full-image">
+                    {$zone-studio-image}
+                    <br />
+                    {$zone-studio-image-filename}
+                </div>
+                
+                <div class="zone-item zone-item-tickets">
+                    <label for="post-tickets">Tickets</label>
+                    {$zone-studio-tickets}
+                </div>
+                
+                <div class="zone-item zone-item-color">
+                    <label for="post-color">Color</label>
+                    {$zone-studio-color}
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6 zone-item zone-item-status">
+                            <label for="post-status">Status</label>
+                            {$zone-studio-status}
+                        </div>
+                        <div class="col-sm-6 zone-item zone-item-expire">
+                            <label for="post-expire">Expiration date</label>
+                            {$zone-studio-expire}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="zone-item zone-item-id">{$zone-studio-id}</div>
+
+                <div id="data-id" style="display: none">{$data-id}</div>
+
+            </div>
+        </div>
+
+        <div class="row-buttons">
+            <ul class="nav navbar-nav navbar-zone">
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-edit disabled" 
+                       data-action="/editor/edit_events/{$data-id}/?js=1&zone=studio">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Edit
+                    </a>
+                </li>
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-undo" 
+                       data-action="/editor/undo_events/{$data-id}/?js=1&zone=studio">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Undo
+                    </a>
+                </li>
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-save" 
+                       data-action="/editor/save_events/{$data-id}/?js=1&zone=studio">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Save
+                    </a>
+                </li>
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-delete {$delete-disable}" 
+                       data-action="/editor/delete_events/{$data-id}/?js=1&zone={$item.zone}">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Remove
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </form>
+</div>

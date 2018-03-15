@@ -1,0 +1,65 @@
+<div class="container-fluid zone-form" style="padding-bottom: 25px">
+    <form id="form-top-eatshop">
+        <div class="row">
+            <div class="col-sm-4">
+                
+                <div class="zone-item zone-item-header">{$zone-eatshop-header}</div>
+
+                <div class="zone-item zone-item-title">{$zone-eatshop-title}</div>
+
+                <div class="zone-item zone-item-text">{$zone-eatshop-text}</div>
+
+                <div class="zone-item zone-item-id">{$zone-eatshop-id}</div>
+
+            </div>
+            <div class="col-sm-5">
+                <!--
+                <div class="zone-item zone-item-image">
+                    {$zone-eatshop-image}
+                    {$zone-eatshop-image-filename}
+                </div>
+                -->
+
+            </div>
+            <div class="col-sm-3">
+                
+
+            </div>
+            <div class="shop-header-filters">
+                <a class="shop-filter" data-action="/editor/list_eatshop/" data-list-type="eat">Comer</a>
+                <a class="shop-filter" data-action="/editor/list_eatshop/" data-list-type="drink">Beber</a>
+                <a class="shop-filter" data-action="/editor/list_eatshop/" data-list-type="shop">Comprar</a>
+            </div>
+        </div>
+
+
+        <div class="zone-buttons">
+            <ul class="nav navbar-nav navbar-zone">
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-edit" 
+                       data-action="/editor/edit_eatshop/{$zone-eatshop-id}/?zone=eatshop">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Edit
+                    </a>
+                </li>
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-undo {$zone-eatshop-disable}" 
+                       data-action="/editor/undo_eatshop/{$zone-eatshop-id}/?zone=eatshop">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Undo
+                    </a>
+                </li>
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-save {$zone-eatshop-disable}" 
+                       data-action="/editor/save_eatshop/{$zone-eatshop-id}/?zone=eatshop">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Save
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </form>
+
+</div>
+

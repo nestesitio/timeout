@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <show>
+    <fields comment="Fields for render">
+      <htmpageid field="htm_page.id" show="false" filter="false">
+
+        <label key="id" />
+      </htmpageid>
+      <htmpagehtmid field="htm_page.htm_id" range="multiple" show="false" filter="true">
+        <label lang="en">Htm Id</label>
+        <label lang="pt">Htm Id</label>
+      </htmpagehtmid>
+      <htmpagelangstld field="htm_page.langs_tld" range="multiple" show="false" filter="true">
+        <label lang="en">Langs Tld</label>
+        <label key="langs" />
+      </htmpagelangstld>
+      <htmpagetitle field="htm_page.title" show="true" filter="true">
+        <label lang="en">Title</label>
+        <label key="title" />
+      </htmpagetitle>
+      <htmpageslug field="htm_page.slug" show="true" filter="true">
+        <label lang="en">Slug</label>
+        <label lang="pt">Slug</label>
+      </htmpageslug>
+      <htmpagemenu field="htm_page.menu" show="true">
+        <label lang="en">Menu</label>
+        <label lang="pt">Menu</label>
+      </htmpagemenu>
+      <htmpageheading field="htm_page.heading" show="true">
+        <label lang="en">Heading</label>
+        <label lang="pt">Heading</label>
+      </htmpageheading>
+      <htmtxtid field="htm_txt.id" show="false">
+
+        <label lang="es">Id</label>
+        <label lang="fr">Id</label>
+        <label key="id" />
+      </htmtxtid>
+      <htmtxthtmpageid field="htm_txt.htm_page_id" show="false">
+        <label lang="en">Htm Page Id</label>
+        <label lang="es">Htm Page Id</label>
+        <label lang="fr">Htm Page Id</label>
+        <label lang="pt">Htm Page Id</label>
+      </htmtxthtmpageid>
+      <htmtxttxt field="htm_txt.txt" show="true">
+        <label lang="en">Txt</label>
+        <label lang="es">Txt</label>
+        <label lang="fr">Txt</label>
+        <label lang="pt">Txt</label>
+      </htmtxttxt>
+      <htmtxttype field="htm_txt.type" show="false">
+        <label lang="en">Type</label>
+        <label lang="es">Type</label>
+        <label lang="fr">Type</label>
+        <label lang="pt">Tipo</label>
+      </htmtxttype>
+      <htmpageupdatedat field="htm_page.updated_at" range="range" show="true" filter="true" type="DateInput">
+        <label lang="en">Updated At</label>
+        <label lang="pt">Actualização</label>
+      </htmpageupdatedat>
+    </fields>
+    <buttons comment="Commands for form and show">
+      <saveform class="glyphicon glyphicon-save" action="core/bind_txt" auth="4">
+
+        <label lang="pt">Guardar</label>
+      </saveform>
+      <closeform class="glyphicon glyphicon-remove" auth="4">
+
+        <label key="close" />
+      </closeform>
+    </buttons>
+  </show>
+  <grid identification="txt" paging="25" fieldid="htm_page.id">
+    <columns comment="Columns for grid">
+      <htmpageid field="htm_page.id" class="id" sort="true">
+
+        <label key="id" />
+      </htmpageid>
+      <htmpagetitle field="htm_page.title" class="title" sort="true">
+        <label lang="en">Title</label>
+        <label key="title" />
+      </htmpagetitle>
+      <htmpageslug field="htm_page.slug" class="slug" sort="true">
+        <label lang="en">Slug</label>
+        <label lang="pt">Slug</label>
+      </htmpageslug>
+      <htmpagemenu field="htm_page.menu" class="menu" sort="true">
+        <label lang="en">Menu</label>
+        <label lang="pt">Menu</label>
+      </htmpagemenu>
+      <htmpageheading field="htm_page.heading" class="heading" sort="true">
+        <label lang="en">Heading</label>
+        <label lang="pt">Heading</label>
+      </htmpageheading>
+      <htmpageupdatedat field="htm_page.updated_at" class="at" sort="true">
+        <label lang="en">Updated At</label>
+        <label lang="pt">Actualização</label>
+      </htmpageupdatedat>
+    </columns>
+    <buttons comment="buttons ion top">
+      <new action="admin/new_txt" class="glyphicon glyphicon-plus" auth="1">
+
+        <label key="insert" />
+      </new>
+      <csv target="_blank" url="/admin/export_txt" class="glyphicon glyphicon-export" auth="1">
+        <label lang="en">Csv</label>
+        <label key="export" />
+      </csv>
+    </buttons>
+  </grid>
+</root>

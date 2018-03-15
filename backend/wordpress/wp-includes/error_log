@@ -1,0 +1,2 @@
+[23-Mar-2017 01:29:19 UTC] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/timeoutmarket/public_html/wp-includes/registration-functions.php on line 7
+[26-Mar-2017 01:18:19 UTC] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/timeoutmarket/public_html/wp-includes/registration-functions.php on line 7

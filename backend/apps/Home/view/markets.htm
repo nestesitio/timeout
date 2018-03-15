@@ -1,0 +1,85 @@
+{@extends 'config:frontend'}
+
+{@block name='css'}
+<link href="/backend/theme/css/personal/menu.css" rel="stylesheet">
+{@endblock}
+
+
+<section class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-centered text-center">
+                <div class="text-center">
+                    <img class="img-responsive" src="/backend/theme/images/timeoutmarket.png" />
+                </div>
+                <h1 class="timeout-wwb">Worldwide backoffice</h1>
+            </div> 
+        </div>
+        <div class="row">
+            <div class="text-center timeout-choose">
+                - Choose Your Market -
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="menu-layer">
+    <div class="container menu-markets">
+        <div class="row">
+            <div class="col-sm-2">
+                
+            </div>
+            <div class="col-sm-2">
+                <div class="menu-item-link text-center">
+                    <a href="/backend/editor/london" class="disabled">
+                        <img src="/backend/theme/images/logos/london.png" alt="London | Convent Garden" />
+                    </a> 
+                </div>
+                <div class="menu-item-description-disabled text-center">
+                    Restricted Access
+                </div>
+            </div>
+            
+            <div class="col-sm-2">
+                <div class="menu-item-link text-center">
+                    <a href="/backend/editor/newyork" class="disabled">
+                        <img src="/backend/theme/images/logos/new-york.png" alt="New York | 1521" />
+                    </a> 
+                </div>
+                <div class="menu-item-description-disabled text-center">
+                    Restricted Access
+                </div>
+            </div>
+            
+            <div class="col-sm-2">
+                <div class="menu-item-link text-center">
+                    <a href="/backend/editor/lisboa" class="menu-makets">
+                        <img src="/backend/theme/images/logos/lisboa.png" alt="Lisboa | Ribeira" />
+                    </a> 
+                </div>
+                <div class="menu-item-description text-center">
+                    OPEN
+                </div>
+            </div>
+            
+            <div class="col-sm-2">
+                <div class="menu-item-link text-center">
+                    <a href="/backend/editor/porto" class="disabled">
+                        <img src="/backend/theme/images/logos/porto.png" alt="Porto | São Bento" />
+                    </a> 
+                </div>
+                <div class="menu-item-description-disabled text-center">
+                    Restricted Access
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</section>
+
+
+
+{@block name='js'}
+
+{@endblock}

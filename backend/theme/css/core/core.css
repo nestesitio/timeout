@@ -1,0 +1,127 @@
+/* 
+    Created on : Dec 15, 2014, 5:57:58 PM
+    Author     : dellpinto
+*/
+a {cursor: pointer}
+.dev_messages{ font-size: 90%; color: #300; position: relative;}
+div.dm{display: none; padding: 3px}
+.dev_button { font-size: 130%;}
+a.fa-gear{color: #f00}
+.dev_bookmark{background-color: #FDF19B;border-bottom: 2px dotted #FFE51E}
+.dev_bookmark b{color: #666}
+.dev_template{ background-color: #DBFF8C}
+.dev_query{background-color: #ccc}
+.dev_controller{ border-bottom: 1px dotted #FFE51E}
+.dev_form{background-color: #EDD0D0}
+.dev_session{background-color: #1EFF74}
+.dev_xml-file, .dev_route, .dev_controller, .dev_action{background-color: #FFB03D}
+.dev_form-error{background-color: #FF0000}
+.dev_template-warning{background-color: #FFE51E}
+.usermsg{border: #000 solid 1px; border-radius: 5px; background-color: #FFE51E; color: #000; padding: 5px}
+#jsmonitor{
+    z-index:360; background:#fff; color:red;
+}
+
+
+li.col[title]:hover:after,  .row_tool a[title]:hover:after{
+  content: attr(title);padding: 4px 8px;background-color: #fff;color: #333;
+  z-index: 20; white-space: nowrap;border-radius: 5px;box-shadow: 0px 0px 4px #222;
+}
+
+.datarow [title]:hover:after {
+  position: absolute;top:initial;left:initial;margin-left:20px;
+}
+
+#layer-one{position:fixed;top:50px;max-width:600px; z-index: 20}
+
+div.datawindow{position: relative; z-index: 10001}
+div.window-normal{
+    background-color:#fff; 
+    border: 1px #ff9 solid; border-radius: 5px 0 5px 5px; position: relative}
+
+div.drag{
+    background-color: #ff9; 
+    border-radius: 0 5px 5px 0; position: relative;
+    text-align: center; padding: 5px 5px 40px; cursor:move;
+}
+.draggable{background-color: #DBFF8C; z-index: 9999}
+
+div.window-float{
+    background-color:#fff; margin: 0; padding: 1px; 
+    border: 1px #ccc solid; border-radius: 5px; position: absolute; top: -20px; left: 50%;}
+div.new-work{position: absolute;top:-35px;z-index: 15; width:95%;}
+
+a.closework{}
+.glyphicon-close:before{content:"\&#xf00d;"}
+
+div.datawork{ padding: 5px}
+
+form{margin-top: 20px}
+div.btns-support{position:absolute;bottom:5px;z-index:4;left:50%;margin-left:-50px;}
+div.btns-form, 
+div.btns-filter {position:absolute;right:0;top:0; }
+div.btns-form{z-index:4; width: 200px; }
+div.btns-filter{z-index:6; width: 150px;}
+div.btns-container{position:fixed; background-color: #F5F5F5; height: 35px; padding: 5px; border-radius: 5px;}
+/*********inputs*/
+div.form-group{max-width: 600px;position:relative; clear: both;}
+div.form-gallery-group{max-width: 120px; min-width: 120px;
+                   position:relative; float: left; display: inline-table; margin: 5px}
+.has-error > .input-msg{color:#F6622F;}
+.has-success > .input-msg{color:#3c763d;}
+span.input-msg{margin-left: 15px;clear: right}
+a.clear-input{position: absolute; right: 0; top: 1px;}
+a.repeat-input{position: absolute; right: 0; top: 1px;}
+.with-add-left{margin-left: 6%; width: 94%}
+.with-add-right{margin-right: 6%; width: 94%}
+.with-add-both{margin:0 12%; width: 88%}
+span.input-addon{
+    width:7%;position:absolute;bottom:0;z-index: 2;overflow:hidden;
+    background-color: #eee;border: 1px solid #ccc;color: #555;
+    font-weight: 400;line-height: 1;padding: 9px 2px;text-align:center;}
+span.addon-left{left:0;border-radius: 4px 0 0 4px;}
+span.addon-right{right:0;border-radius: 0 4px 4px 0;}
+span.addon-chosen{right:0;border-radius: 0 4px 4px 0; padding-top: 6px; font-weight: 800}
+span.ch{}
+
+/**/
+span.selected{border: #cc0 solid 2px}
+
+.bg-green{background-color: #5CB85C}
+
+.to-edit{border: #ccc dotted 1px; height: 30px; width: 100%; line-height: 2 !important;
+         font: normal normal normal 14px/1 FontAwesome;
+         font-size: inherit;
+         -webkit-font-smoothing: antialiased;
+         -moz-osx-font-smoothing: grayscale;
+}
+.to-edit:before {
+  content: "\f040"; padding-right: 15px;
+}
+/*.to-edit:empty {vertical-align: middle; margin-top: 10px;}*/
+
+.jedit{display: inline;}
+.jedit input {height: 30px; width: 65%;padding-top: 0;}
+.jedit button {height: 30px;padding-top: 0;}
+
+#monitor{position: fixed; top: 150px; right: 0; background-color: #fff; color: #000; z-index: 20}
+
+/*PRELOADER*/
+#preload,
+#modal-preload
+{
+    position: absolute; background-image: url("/backend/theme/images/preload.gif"); 
+    background-repeat: no-repeat;
+    width: 100%; height: 100%;
+    background-size: 10% auto;
+    background-position: center;
+    z-index: 10; top: 0; left: 0; 
+}
+
+
+
+.col-centered{
+    float: none;
+    margin-left: auto; margin-right: auto;
+}
+

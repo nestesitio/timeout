@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <html title="TimeOutMarket" />
+    <lang default="pt" />
+    <dbconn>
+        <dev host="localhost" db="stage" user="root" password="Hotelfasano123" />
+    </dbconn>
+    <apis>
+        <google appname="NSitio" 
+                appid="isnotme.apps.googleusercontent.com" 
+                key="isnotmykey" 
+                redir="http://project.com" 
+                devkey="myproject@gmail.com" />
+        <analytics id="UA-123456789-1" domain="myproject.com" />
+    </apis>
+    <redir>
+        <noaccess developer="true" url="/" />
+    </redir>
+    <themes>
+        <frontend template="layout/creative/main.htm" />
+    </themes>
+</root>

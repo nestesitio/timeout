@@ -1,0 +1,131 @@
+.highlight-single{
+	margin: 0;
+
+	&__col{
+		
+		@include breakpoint(tablet) {
+			display: inline-block;
+			width: 50%;
+			vertical-align: middle;
+		}
+
+		&:last-child{
+			padding: 0 20px;
+
+			@include breakpoint(tablet) {
+				width: 49%;
+				padding: 0 20px;
+			}
+
+			@include breakpoint(desktop) {
+				padding: 0 30px;
+			}
+
+			@include breakpoint(big-desktop) {
+				padding: 0 40px;
+			}
+
+			@include breakpoint(large-desktop) {
+				padding: 0 60px;
+			}
+		}
+	}
+
+	&__image--desktop{
+		display: none;
+
+		@include breakpoint(tablet) {
+			display: block;
+		}
+	}
+
+	&__image--mobile{
+		display: block;
+
+		@include breakpoint(tablet) {
+			display: none;
+		}
+	}
+
+	&__title{
+		font-size: rem(30);
+		font-family: $font__yellowDesign;
+		color: $color__blue-light;
+		font-weight: 900;
+		margin: 20px 0 0;
+
+		@include breakpoint(laptop) {
+			font-size: rem(40);
+			margin: 0;
+		}
+
+		@include breakpoint(desktop) {
+			font-size: rem(50);
+		}
+
+		@include breakpoint(big-desktop) {
+			font-size: rem(60);
+		}
+
+		@include breakpoint(large-desktop) {
+			font-size: rem(70);
+		}
+	}
+
+	&__subtitle{
+		font-size: rem(30);
+		font-family: $font__leagueGothic;
+		text-transform: uppercase;
+		line-height: 1;
+		margin: 20px 0;
+
+		@include breakpoint(laptop) {
+			font-size: rem(40);
+		}
+
+		@include breakpoint(desktop) {
+			font-size: rem(50);
+			margin: 20px 0 30px;
+		}
+
+		@include breakpoint(big-desktop) {
+			font-size: rem(70);
+		}
+
+		@include breakpoint(large-desktop) {
+			font-size: rem(90);
+			margin: 20px 0 50px;
+		}
+	}
+
+	&__description{
+
+		p{
+			font-size: rem(15);
+
+			@include breakpoint(desktop) {
+				font-size: rem(18);
+			}
+
+			@include breakpoint(large-desktop) {
+				font-size: rem(20);
+			}
+
+			strong{
+				font-size: rem(20);
+				font-family: $font__leagueGothic;
+				text-transform: uppercase;
+
+				@include breakpoint(desktop) {
+					font-size: rem(25);
+				}
+
+				@include breakpoint(large-desktop) {
+					font-size: rem(30);
+				}
+			}
+
+		}
+	}
+
+}

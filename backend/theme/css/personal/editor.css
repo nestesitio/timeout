@@ -1,0 +1,539 @@
+/* 
+    Created on : Nov 29, 2016, 4:32:44 PM
+    Author     : dellpinto
+*/
+.full-content{
+    padding: 0 15px;
+    margin: 0;
+    width: 100%;
+}
+.editor-container-6{margin: 0; width: 50%; float: left;}
+@media (max-width: 768) {
+    .editor-container-6{width: 100%;}
+}
+
+/* header */
+#myCarousel .carousel-inner {
+    position: relative;
+}
+#myCarousel, 
+#myCarousel .carousel-inner .item {min-height: 100vh; max-height: 100vh;}
+
+.carousel-indicators {
+    bottom: 50px;
+}
+
+.carousel-indicators li,
+.ui-state-highlight
+{
+    background-position: center; background-size: cover;
+    border: 2px dashed #fff;
+    border-radius: 5px; cursor: pointer; display: inline-block;
+    height: 40px; width: 60px; margin: 2px;
+    opacity: 0.6;
+}
+
+.carousel-indicators li.post-status-draft{border-color: #ccc;}
+.carousel-indicators li.post-status-publish{border-color: #076A90;}
+
+
+.carousel-indicators .active {
+    opacity: 1; border: 2px solid #fff;
+    height: 40px; width: 60px;
+    margin: 2px;
+    
+}
+
+#myCarousel .carousel-logo{
+    position: absolute; z-index: 5;
+    left: 50%; top: 30%; transform: translate(-50%, -30%);
+}
+
+#myCarousel .carousel-inner h2{ 
+    font-size: 3.563em;
+    color: white; font-family: "LeagueGothic";
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%; bottom: 20%;
+    transform: translate(-50%,-20%);
+    z-index: 5;
+}
+.slider-buttons{
+    position: absolute; bottom: 0; right: 15%; z-index: 33;
+}
+
+/*zones */
+.editor-zone{
+    border-color: #fff; border-width: 2px;
+    padding: 60px 5px 80px;
+    margin: -1px;
+    position: relative;
+}
+#zone-header{padding: 0;}
+#zone-middle-north-west{ border-style: solid;}
+#zone-middle-south-west{border-style: none solid solid;}
+#zone-middle-east{border-style: solid none none;}
+
+.editor-zone .zone-item,
+#form-edit-studio .zone-item,
+#form-edit-academy .zone-item{
+    padding: 10px 5px;
+}
+
+.zone-form{}
+
+/* zone-buttons*/
+.zone-buttons, 
+.modal-buttons
+{position: absolute; bottom: 0; right: 0;}
+.row-buttons{
+    position: relative; float: right;
+}
+.navbar-zone > li > a:focus,
+.navbar-zone > li > a:hover
+{
+    background: none;
+}
+.navbar-zone > li > a{
+    color: #fff;
+}
+.navbar-zone > li > a.btn-edit-edit > i{
+    color: #92C4F4;
+}
+.navbar-zone > li > a.btn-edit-undo > i{
+    color: #3A98E6;
+}
+.navbar-zone > li > a.btn-edit-save > i{
+    color: #324BAF;
+}
+
+/*home-zone*/
+.zone-item-id{
+    display: none; color: #BABABA;
+}
+
+.zone-item-header,
+.zone-item-title,
+.zone-item-text-title{
+    text-align: center; line-height: 1;
+}
+
+/*category*/
+.zone-item-category,
+.zone-item-category input,
+.zone-item-header,
+.zone-item-header input{
+    color: #00aae5;
+    font-family: "YellowDesign";
+    line-height: 1;
+}
+
+.zone-item-category {
+    color: #bababa;
+    font-size: 2.063em;
+}
+.zone-item-category input{
+    color: #bababa;
+    font-size: 1.063em;
+}
+
+/*header*/
+.zone-item-header{
+    font-size: 2.1em;
+}
+#zone-studio .zone-item-header, 
+#zone-academy .zone-item-header{
+    font-size: 2.1em;
+}
+
+.zone-item-title,
+.zone-item-text-title{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.zone-item-text-title{
+    font-size: 2em;
+}
+
+.zone-item-title{
+    font-size: 5.8em;
+}
+
+.zone-item-title input{
+    font-size: 0.5em;
+}
+
+.zone-item-text{
+    font-family: "timeout", "Times New Roman", "Georgia", serif;
+    font-size:1.3em;
+}
+
+.zone-item img{
+    height: auto; width: 100%; margin-right: 10px;
+}
+
+.zone-item label{
+    font-family: "LeagueGothic",serif; text-transform: uppercase; color: #fff;
+    margin: 0 0 0 15px; text-align: left; font-size: 36px;
+}
+#form-edit-studio .zone-item,
+#form-edit-academy .zone-item{
+    text-align: left;
+}
+
+.zone-item input{
+    height: 55px;
+}
+
+.zone-item-header input{
+    font-size: 0.8em;
+}
+
+.zone-item-title textarea
+{
+    font-size: 0.8em;
+}
+.zone-item-text-title input{
+    font-size: 55%;
+}
+
+.zone-item-tickets, .zone-item-color {
+    font-family: 'Open', sans-serif;
+    font-size: 1.2em;
+}
+
+.clear-input{display: none;}
+.zone-item input,
+.zone-item textarea{ 
+    background-color: #000; border: none; 
+    color: inherit; font-family: inherit; text-transform: inherit;
+    line-height: 1;
+    margin: 0 10px 10px; border: #fff 1px dashed;
+    padding: 10px 5px;
+}
+.zone-item textarea{ 
+    margin: 0;
+    overflow-y: visible;
+}
+.zone-item-footer-title{
+    text-align: center;  font-size: 2.5em; text-transform: uppercase;
+}
+
+.zone-item-footer-title input,
+.zone-item-footer-title{
+    font-size: 1.5em;
+}
+
+/*form-top-calendar*/
+#form-top-calendar .zone-item-title{font-size: 6em; }
+#form-top-calendar .zone-item-title input{font-size:0.5em; }
+#form-top-calendar .zone-item-header{
+    font-size: 3em; 
+}
+#form-top-calendar .zone-item-text-title{
+    font-size: 1.5em; font-family: "YellowDesign"; text-transform: capitalize;
+}
+#form-top-calendar .zone-item-title,
+#form-top-calendar .zone-item-header,
+#form-top-calendar .zone-item-text-title{
+    text-align: left;
+}
+.list-item-calendar .zone-full-image{padding: 0; margin: 0 !important;}
+
+/*form-top-themarket*/
+#form-top-concept .zone-item-info{
+    font-size: 2em; color: #00aae5; font-family: "timeout", serif; line-height: 1.4em;
+}
+
+/**file-input*/
+.zone-item-image{
+    margin-bottom: 15px;
+}
+.zone-item .file-preview {
+    border: none; padding: 0; width: 100%;
+}
+.zone-item-image .input-group-btn span {display: none;}
+
+.kv-fileinput-caption,
+.zone-item-image .input-group-btn .btn-default{ 
+    color: #fff; background: none;
+    border-top: #fff 1px dashed;
+    border-bottom: #fff 1px dashed;
+}
+.kv-fileinput-caption{
+    border-left: #fff 1px dashed;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+}
+.file-caption-name i{display: none;}
+.zone-item-image .input-group-btn .btn-default{
+    color: #fff; background: none;
+    display: none;
+}
+.fileinput-remove{position: absolute; top: 2px; right: 2px;}
+
+.error-caption{ 
+    background-color: #EE4B28; color: #fff;
+    font-family: 'Open', sans-serif;
+}
+.image-args{
+    font-family: 'Open', sans-serif;
+}
+
+/*disabled*/
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.6;
+}
+/*zone-switcher*/
+.zone-switcher-container{ position: absolute; top: 20px; right: 20px;}
+.zone-switcher{ position: relative; width: 40px; height: 40px; background-color: #111;}
+.zone-switcher a{ 
+    color: #fff; margin: 1px; background-color: #fff;
+    position: absolute;
+}
+.zone-switcher a.disabled{ 
+    background-color: #00A5E5; color: #00A5E5;
+}
+.btn-east{ right: 0; top: 0; height: 38px; width: 18px; }
+.btn-north-west{ left: 0; top: 0; height: 18px; width: 18px; }
+.btn-south-west{ left: 0; bottom: 0; height: 18px; width: 18px; }
+.btn-west{ left: 0; top: 0; height: 38px; width: 18px; }
+
+.btn-studio{ 
+    right: 0; top: 0; height: 38px; width: 18px;
+    pointer-events: none; cursor: default;  
+}
+.zone-switcher a.btn-studio{color: #ccc; background-color: #ccc;}
+
+#zone-studio .btn-studio {background-color: #00A5E5; color: #00A5E5;}
+#zone-studio .zone-switcher a.btn-west {
+    pointer-events: none; cursor: default;
+    color: #ccc; background-color: #ccc;
+}
+
+/*academy and studio*/
+.zone-academy-switcher{ 
+    font-family: 'timeout', serif;
+    margin-bottom: 15px;
+}
+#zone-academy, #top-event{
+    padding: 10px 5px 80px; border-bottom: 2px solid #fff;
+}
+#top-event{
+    padding: 10px 5px;
+}
+#zone-academy .zone-item-title,
+#top-event.zone-item-title{
+    text-align: left;
+    font-size: 3.563em;
+    font-family: "LeagueGothic";
+    text-transform: uppercase;
+}
+
+#top-event.icon,
+#zone-academy .icon,
+#form-edit-studio .icon,
+#form-edit-academy .icon
+{
+    font-size: 3em; color: #BABABA;
+}
+
+#top-event.icon span,
+#zone-academy .icon span,
+#form-edit-studio .icon span,
+#form-edit-academy .icon span
+{
+    padding-left: 15px; color: #fff;
+}
+#top-event.icon input,
+#zone-academy .icon input,
+#form-edit-studio .icon input,
+#form-edit-academy .icon input
+{
+    font-size: 1em; width: 78%; float: right; margin: 0; clear: right;
+}
+#top-event.icon input[name=post-date],
+#zone-academy .icon input[name=post-date]{
+    width: 95%;
+}
+.zone-item-date .input-group { width: 80%; float: right; margin: 0; font-size: 50%; }
+.zone-item-date .input-group input { width:100%;}
+.zone-item-date .input-group div,
+.zone-item-expire .input-group div
+{ color: #000; }
+
+/* bottom*/
+#zone-bottom-north-west{ border-right: 2px solid #fff; border-bottom: 2px solid #fff;}
+#zone-bottom-south-west{ border-right: 2px solid #fff; }
+
+/*footer*/
+footer .site-info {
+    display: table;
+    table-layout: fixed;
+    text-align: center;
+    width: 100%;
+}
+footer section{
+    margin: 0; padding: 20px 0 10px;
+}
+footer a {
+    color: #fff;
+    transition: all 0.33s ease 0s;
+}
+footer a:hover {
+    text-decoration: none;
+}
+
+footer .home-module__title {
+    color: #fff; font-family: "YellowDesign"; font-size: 1.563em;
+    line-height: 1; margin: 0 0 5px; text-transform: lowercase;
+}
+footer .menu-lang {
+    margin-top: 15px; transform: none;
+}
+footer #primary-menu {
+    font-family: "LeagueGothic";
+    font-size: 1.4em; letter-spacing: 1px;
+    list-style: outside none none;
+    margin: 0; padding: 0;
+    text-transform: uppercase;
+}
+footer #primary-menu li {
+    margin-bottom: 15px;
+}
+footer  .site-footer__subtitle {
+    font-family: "LeagueGothic";
+    font-size: 1.25em;
+    margin: 15px 0 5px;
+    text-transform: uppercase;
+}
+footer .site-footer__copy {
+    font-size: 1.125em;
+    font-family: "timeout",​Times New Roman,​Georgia,​serif;
+}
+
+footer input,
+footer textarea{
+    background-color: #000; 
+    color: inherit; font-family: inherit; text-transform: inherit;
+}
+footer .site-footer__copyright {
+    letter-spacing: 2px;
+    margin: 30px 0 0;
+    font-family: "LeagueGothic";
+    font-size: 0.875em;
+    text-transform: uppercase;
+}
+footer .subheader {
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 25px 15px;
+}
+
+footer .subheader ul{
+    display: inline;
+    list-style: outside none none;
+    margin: 0; padding: 0;
+    font-size: 1em;
+    font-family: "timeout",​Times New Roman,​Georgia,​serif;
+}
+
+footer button{ border-radius: 25%;}
+footer button[type=cancel]{ display: none;}
+.jedit button {
+    height: 30px; padding-top: 0; 
+    background-color: #00A5E5; color: #000;
+}
+.info-address,
+.info-copy
+{display: table;}
+.info-copy{font-size: 9px !important;}
+
+/*modal*/
+#modal-page{
+    border-radius: 10px; border: #666 solid 2px;
+}
+.modal-content
+{background-color: #000;}
+
+#modal-title{text-transform: uppercase;}
+.modal-footer{ 
+    position: relative; height: 70px; display: block;
+    border-top: 1px solid #666; border-bottom: 1px solid #333;
+}
+.modal-footer .navbar-nav > li > a {
+    padding-top: 0; line-height: 15px;
+}
+.modal-body table{font-family: 'Open', sans-serif}
+
+/*academy*/
+.list-item{ border-bottom: #fff solid 1px; padding: 10px 0 0;}
+.event-row .zone-item{
+    text-align: left; margin: 10px 0;
+}
+.event-row label{ font-size: 25px; clear: right;}
+.event-row .zone-item-status, .event-row .zone-item-expire,
+.event-row .icon{
+    font-size: 2.5em; padding: 15px 0;
+}
+.zone-item-group div{
+    float: left; padding-left: 10px; margin-right: 15px; max-width: 40%;
+}
+#form-top-event .zone-item-group{padding: 0;}
+#form-top-event .zone-item-info,
+#form-top-event .zone-item-group div{
+    text-transform: uppercase; font-size: 1.1em;
+}
+#form-top-event .zone-item-info{
+    padding-bottom: 0;
+}
+#form-top-event .zone-item-group div{
+    padding-top: 5px;
+}
+.zone-item-group div i{
+    margin-right: 10px;
+}
+
+/*footer*/
+.site-info .menu,
+.site-info h2,
+.site-info h3{ 
+    text-align: left;
+}
+.site-info h2 { 
+    font-size: 2.1em;
+}
+.site-info h3 { 
+    font-size: 1.8em;
+}
+.site-info .menu a { 
+    font-size: 1.3em;
+}
+.social-media-editor a.popi-link{
+    font-size: 1.5em;
+}
+.social-media-editor ul{
+    margin-top: 10px; text-align: left;
+}
+.social-media-editor li{
+    margin: 0 10px 0 0; position: relative;
+}
+.social-media-editor li a.no-data { 
+    color: #666;
+}
+/*popi*/
+.popi-edit{
+    position: absolute; top: 30px;
+    left: 0; right: 0; margin-left: auto; margin-right: auto; 
+    width: 300px; padding: 10px;
+    border: #fff solid 1px; border-radius: 5px; 
+    background-color: #222;
+}
+.close-pop-edit{ float: right;}
+.popi-buttons{float: right; clear: right; max-height: 60px;}
+.popi-edit label span.icon {font-size: 0.7em;}
+.popi-edit .form-inline input
+{ width: 75% !important; float: right;}

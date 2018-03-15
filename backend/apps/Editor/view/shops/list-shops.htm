@@ -1,0 +1,60 @@
+{@while ($item in $list):}
+<div class="col-sm-6 list-item" id="row-{$item.data-id}">
+    <div class="container-fluid shop-row">
+
+        <div class="row">
+            <div class="col-sm-12">
+                
+                <div class="zone-item zone-item-image zone-full-image">
+                    {$item.image}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-sm-3">
+
+                <div class="zone-item zone-item-space-number">
+                    {$item.space-number}
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div class="zone-item zone-item-title" style="text-align: left; font-size: 4em;">
+                    {$item.title}
+                </div>
+                <div class="zone-item zone-item-text">
+                    {$item.pop-excerpt}
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row-buttons">
+            <ul class="nav navbar-nav navbar-zone">
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-edit" 
+                       href="/backend/editor/shops/{$item.data-id}/">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Edit
+                    </a>
+                </li>
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-undo {$item.disable}" 
+                       data-action="/editor/undo_shops/{$item.data-id}/?js=1">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Undo
+                    </a>
+                </li>
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-save {$item.disable}" 
+                       data-action="/editor/save_shops/{$item.data-id}/?js=1">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Save
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+{@endwhile;}

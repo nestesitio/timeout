@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <show>
+    <fields comment="Fields for render">
+      <htmhasvarshtmvarsid field="htm_has_vars.htm_vars_id" show="false" filter="false">
+        <label lang="en">Htm Vars Id</label>
+        <label lang="pt">Htm Vars Id</label>
+      </htmhasvarshtmvarsid>
+      <htmhasvarshtmid field="htm_has_vars.htm_id" show="false" filter="false">
+        <label lang="en">Htm Id</label>
+        <label lang="pt">Htm Id</label>
+      </htmhasvarshtmid>
+    </fields>
+    <buttons comment="Commands for form and show">
+      <saveform class="glyphicon glyphicon-save" action="core/edit_htmhasvars" auth="1">
+
+        <label key="save" />
+      </saveform>
+      <editform class="glyphicon glyphicon-pencil" action="core/edit_htmhasvars" auth="1">
+
+        <label key="edit" />
+      </editform>
+      <resetform class="glyphicon glyphicon-refresh" auth="1">
+        <label lang="en">Reset</label>
+        <label lang="pt">Reset</label>
+      </resetform>
+      <delform class="glyphicon glyphicon-trash" action="core/del_htmhasvars" auth="1">
+
+        <label key="delete" />
+      </delform>
+      <closeform class="glyphicon glyphicon-remove" auth="1">
+
+        <label key="close" />
+      </closeform>
+    </buttons>
+  </show>
+  <grid identification="htmhasvars" paging="25" fieldid="htm_has_vars.id">
+    <columns comment="Columns for grid">
+      <htmhasvarshtmvarsid field="htm_has_vars.htm_vars_id" class="vars_id" sort="true">
+        <label lang="en">Htm Vars Id</label>
+        <label lang="pt">Htm Vars Id</label>
+      </htmhasvarshtmvarsid>
+      <htmhasvarshtmid field="htm_has_vars.htm_id" class="id" sort="true">
+        <label lang="en">Htm Id</label>
+        <label lang="pt">Htm Id</label>
+      </htmhasvarshtmid>
+    </columns>
+    <tools comment="buttons in row">
+      <edit action="core/edit_htmhasvars" class="fa-pencil" id="htm_has_vars.id" auth="1">
+
+        <label key="edit" />
+      </edit>
+      <show action="core/show_htmhasvars" class="fa-eye" id="htm_has_vars.id" auth="1">
+
+        <label key="show" />
+      </show>
+      <del action="core/del_htmhasvars" class="fa-trash-o" id="htm_has_vars.id" auth="1">
+
+        <label lang="pt">Del</label>
+      </del>
+    </tools>
+    <buttons comment="buttons ion top">
+      <new action="core/new_htmhasvars" class="glyphicon glyphicon-plus" auth="1">
+
+        <label key="insert" />
+      </new>
+      <export url="/core/export_htmhasvars" class="glyphicon glyphicon-export" auth="1">
+
+        <label key="export" />
+      </export>
+    </buttons>
+  </grid>
+</root>

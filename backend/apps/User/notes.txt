@@ -1,0 +1,146 @@
+wp_cf7dbplugin_st
+wp_cf7dbplugin_submits
+wp_commentmeta
+wp_comments
+wp_icl_content_status
+wp_icl_core_status
+wp_icl_flags
+wp_icl_languages
+wp_icl_languages_translations
+wp_icl_locale_map
+wp_icl_message_status
+wp_icl_node
+wp_icl_reminders
+wp_icl_string_packages
+wp_icl_string_positions
+wp_icl_string_status
+wp_icl_string_translations
+wp_icl_strings
+wp_icl_translate
+wp_icl_translate_job
+wp_icl_translation_batches
+wp_icl_translation_status
+wp_icl_translations
+wp_links
+wp_options
+wp_pTC_logs
+wp_postmeta
+wp_posts
+wp_redirection_404
+wp_redirection_groups
+wp_redirection_items
+wp_redirection_logs
+wp_snp_stats
+wp_term_relationships
+wp_term_taxonomy
+wp_termmeta
+wp_terms
+wp_usermeta
+wp_users
+wp_wfBadLeechers
+wp_wfBlockedCommentLog
+wp_wfBlockedIPLog
+wp_wfBlocks
+wp_wfBlocks7
+wp_wfBlocksAdv
+wp_wfConfig
+wp_wfCrawlers
+wp_wfFileChanges
+wp_wfFileMods
+wp_wfHits
+wp_wfHoover
+wp_wfIssues
+wp_wfKnownFileList
+wp_wfLeechers
+wp_wfLockedOut
+wp_wfLocs
+wp_wfLogins
+wp_wfNet404s
+wp_wfNotifications
+wp_wfPendingIssues
+wp_wfReverseCache
+wp_wfSNIPCache
+wp_wfScanners
+wp_wfStatus
+wp_wfThrottleLog
+wp_wfVulnScanners
+wp_xsg_sitemap_meta
+wp_yoast_seo_links
+wp_yoast_seo_met
+
+object(stdClass)#5264 (10) { 
+["ID"]=> string(1) "1" 
+["user_login"]=> string(20) "timeout-lisboa-admin" 
+["user_pass"]=> string(34) "$P$BZjZ2lpVrWPrvwVQy3hZzmyoPn4Ivn." 
+["user_nicename"]=> string(20) "timeout-lisboa-admin" 
+["user_email"]=> string(27) "helder.monteiro@thehotel.pt" 
+["user_url"]=> string(0) "" 
+["user_registered"]=> string(19) "2016-05-07 20:38:22" 
+["user_activation_key"]=> string(45) "1509636747:$P$BLUtD6uNjub0UFYnxPnaBMuNBJwZ0C." 
+["user_status"]=> string(1) "0" ["display_name"]=> string(20) "timeout-lisboa-admin" 
+
+object(WP_User)#5234 (8) { ["data"]=> object(stdClass)#5233 (10) { ["ID"]=> string(1) "5" ["user_login"]=> string(9) "Developer" ["user_pass"]=> string(34) "$P$BwjmSSh06pS3xykq64LW5q3PDJVRZI0" ["user_nicename"]=> string(9) "developer" ["user_email"]=> string(25) "luis.nestesitio@gmail.com" ["user_url"]=> string(0) "" ["user_registered"]=> string(19) "2017-03-21 22:35:59" ["user_activation_key"]=> string(0) "" ["user_status"]=> string(1) "0" ["display_name"]=> string(9) "Developer" } ["ID"]=> int(5) ["caps"]=> array(2) { ["administrator"]=> bool(true) ["translate"]=> bool(true) } ["cap_key"]=> string(15) "wp_capabilities" ["roles"]=> array(1) { [0]=> string(13) "administrator" } ["allcaps"]=> array(80) { ["switch_themes"]=> bool(true) ["edit_themes"]=> bool(true) ["activate_plugins"]=> bool(true) ["edit_plugins"]=> bool(true) ["edit_users"]=> bool(true) ["edit_files"]=> bool(true) ["manage_options"]=> bool(true) ["moderate_comments"]=> bool(true) ["manage_categories"]=> bool(true) ["manage_links"]=> bool(true) ["upload_files"]=> bool(true) ["import"]=> bool(true) ["unfiltered_html"]=> bool(true) ["edit_posts"]=> bool(true) ["edit_others_posts"]=> bool(true) ["edit_published_posts"]=> bool(true) ["publish_posts"]=> bool(true) ["edit_pages"]=> bool(true) ["read"]=> bool(true) ["level_10"]=> bool(true) ["level_9"]=> bool(true) ["level_8"]=> bool(true) ["level_7"]=> bool(true) ["level_6"]=> bool(true) ["level_5"]=> bool(true) ["level_4"]=> bool(true) ["level_3"]=> bool(true) ["level_2"]=> bool(true) ["level_1"]=> bool(true) ["level_0"]=> bool(true) ["edit_others_pages"]=> bool(true) ["edit_published_pages"]=> bool(true) ["publish_pages"]=> bool(true) ["delete_pages"]=> bool(true) ["delete_others_pages"]=> bool(true) ["delete_published_pages"]=> bool(true) ["delete_posts"]=> bool(true) ["delete_others_posts"]=> bool(true) ["delete_published_posts"]=> bool(true) ["delete_private_posts"]=> bool(true) ["edit_private_posts"]=> bool(true) ["read_private_posts"]=> bool(true) ["delete_private_pages"]=> bool(true) ["edit_private_pages"]=> bool(true) ["read_private_pages"]=> bool(true) ["delete_users"]=> bool(true) ["create_users"]=> bool(true) ["unfiltered_upload"]=> bool(true) ["edit_dashboard"]=> bool(true) ["update_plugins"]=> bool(true) ["delete_plugins"]=> bool(true) ["install_plugins"]=> bool(true) ["update_themes"]=> bool(true) ["install_themes"]=> bool(true) ["update_core"]=> bool(true) ["list_users"]=> bool(true) ["remove_users"]=> bool(true) ["promote_users"]=> bool(true) ["edit_theme_options"]=> bool(true) ["delete_themes"]=> bool(true) ["export"]=> bool(true) ["wpml_manage_translation_management"]=> bool(true) ["wpml_manage_languages"]=> bool(true) ["wpml_manage_theme_and_plugin_localization"]=> bool(true) ["wpml_manage_support"]=> bool(true) ["wpml_manage_woocommerce_multilingual"]=> bool(true) ["wpml_operate_woocommerce_multilingual"]=> bool(true) ["wpml_manage_media_translation"]=> bool(true) ["wpml_manage_navigation"]=> bool(true) ["wpml_manage_sticky_links"]=> bool(true) ["wpml_manage_string_translation"]=> bool(true) ["wpml_manage_translation_analytics"]=> bool(true) ["wpml_manage_wp_menus_sync"]=> bool(true) ["wpml_manage_taxonomy_translation"]=> bool(true) ["wpml_manage_troubleshooting"]=> bool(true) ["wpml_manage_translation_options"]=> bool(true) ["pTypeConverter"]=> bool(true) ["copy_posts"]=> bool(true) ["administrator"]=> bool(true) ["translate"]=> bool(true) } ["filter"]=> NULL ["site_id":"WP_User":private]=> int(1) } *******
+
+object(WP_User)#5204 (8) { 
+["data"]=> object(stdClass)#5203 (10) { 
+["ID"]=> string(1) "1" 
+["user_login"]=> string(20) "timeout-lisboa-admin" 
+["user_pass"]=> string(34) "$P$BZjZ2lpVrWPrvwVQy3hZzmyoPn4Ivn." 
+["user_nicename"]=> string(20) "timeout-lisboa-admin" 
+["user_email"]=> string(27) "helder.monteiro@thehotel.pt" 
+["user_url"]=> string(0) "" 
+["user_registered"]=> string(19) "2016-05-07 20:38:22" 
+["user_activation_key"]=> string(45) "1518734175:$P$BOv/ppLR0zzn0fFQtgpsCYaL4ngpj.0" 
+["user_status"]=> string(1) "0" 
+["display_name"]=> string(20) "timeout-lisboa-admin" } ["ID"]=> int(1) 
+["caps"]=> array(2) { 
+["administrator"]=> bool(true) ["translate"]=> bool(true) } ["cap_key"]=> string(15) "wp_capabilities" 
+["roles"]=> array(1) { [0]=> string(13) "administrator" } ["allcaps"]=> array(80) { 
+["switch_themes"]=> bool(true) 
+["edit_themes"]=> bool(true) 
+["activate_plugins"]=> bool(true) 
+["edit_plugins"]=> bool(true) 
+["edit_users"]=> bool(true) 
+["edit_files"]=> bool(true) 
+["manage_options"]=> bool(true) 
+["moderate_comments"]=> bool(true) 
+["manage_categories"]=> bool(true) 
+["manage_links"]=> bool(true) 
+["upload_files"]=> bool(true) 
+["import"]=> bool(true) 
+["unfiltered_html"]=> bool(true) 
+["edit_posts"]=> bool(true) 
+["edit_others_posts"]=> bool(true) 
+["edit_published_posts"]=> bool(true) 
+["publish_posts"]=> bool(true) 
+["edit_pages"]=> bool(true) ["read"]=> bool(true) 
+["level_10"]=> bool(true) ["level_9"]=> bool(true) 
+["level_8"]=> bool(true) ["level_7"]=> bool(true) 
+["level_6"]=> bool(true) ["level_5"]=> bool(true) 
+["level_4"]=> bool(true) ["level_3"]=> bool(true) 
+["level_2"]=> bool(true) ["level_1"]=> bool(true) 
+["level_0"]=> bool(true) ["edit_others_pages"]=> bool(true) 
+["edit_published_pages"]=> bool(true) ["publish_pages"]=> bool(true) 
+["delete_pages"]=> bool(true) ["delete_others_pages"]=> bool(true) 
+["delete_published_pages"]=> bool(true) ["delete_posts"]=> bool(true) 
+["delete_others_posts"]=> bool(true) ["delete_published_posts"]=> bool(true) 
+["delete_private_posts"]=> bool(true) ["edit_private_posts"]=> bool(true) 
+["read_private_posts"]=> bool(true) ["delete_private_pages"]=> bool(true) 
+["edit_private_pages"]=> bool(true) ["read_private_pages"]=> bool(true) 
+["delete_users"]=> bool(true) ["create_users"]=> bool(true) 
+["unfiltered_upload"]=> bool(true) ["edit_dashboard"]=> bool(true) 
+["update_plugins"]=> bool(true) ["delete_plugins"]=> bool(true) 
+["install_plugins"]=> bool(true) ["update_themes"]=> bool(true) 
+["install_themes"]=> bool(true) ["update_core"]=> bool(true) 
+["list_users"]=> bool(true) ["remove_users"]=> bool(true) 
+["promote_users"]=> bool(true) ["edit_theme_options"]=> bool(true) 
+["delete_themes"]=> bool(true) ["export"]=> bool(true) ["wpml_manage_translation_management"]=> bool(true) 
+["wpml_manage_languages"]=> bool(true) ["wpml_manage_theme_and_plugin_localization"]=> bool(true) 
+["wpml_manage_support"]=> bool(true) ["wpml_manage_woocommerce_multilingual"]=> bool(true) 
+["wpml_operate_woocommerce_multilingual"]=> bool(true) ["wpml_manage_media_translation"]=> bool(true) 
+["wpml_manage_navigation"]=> bool(true) ["wpml_manage_sticky_links"]=> bool(true) 
+["wpml_manage_string_translation"]=> bool(true) ["wpml_manage_translation_analytics"]=> bool(true) 
+["wpml_manage_wp_menus_sync"]=> bool(true) ["wpml_manage_taxonomy_translation"]=> bool(true) 
+["wpml_manage_troubleshooting"]=> bool(true) ["wpml_manage_translation_options"]=> bool(true) 
+["pTypeConverter"]=> bool(true) ["copy_posts"]=> bool(true) ["administrator"]=> bool(true) 
+["translate"]=> bool(true) } ["filter"]=> NULL ["site_id":"WP_User":private]=> int(1) } 

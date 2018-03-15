@@ -1,0 +1,5 @@
+[09-Sep-2016 12:19:23 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/timeoutmarket/public_html/wp-content/themes/timeout/index.php on line 15
+[25-Oct-2016 15:05:15 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/timeoutmarket/public_html/wp-content/themes/timeout/index.php on line 15
+[27-Oct-2016 14:28:50 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/timeoutmarket/public_html/wp-content/themes/timeout/404.php on line 10
+[24-Dec-2016 02:42:37 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/timeoutmarket/public_html/wp-content/themes/timeout/index.php on line 15
+[24-Dec-2016 02:42:37 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/timeoutmarket/public_html/wp-content/themes/timeout/index.php on line 15

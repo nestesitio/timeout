@@ -1,0 +1,190 @@
+.snp-theme12 {
+    font: 17px/1.5 Calibri, "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #fff;
+    max-width: 800px;
+    background-color: #F00047;
+    display: table;
+    position: relative;
+}
+
+@keyframes shake{ 
+    0% { transform: translate(3px, 0); }
+50% { transform: translate(-3px, 0); }
+100% { transform: translate(0, 0); }
+}
+
+@-moz-keyframes shake{ 
+    0% { -moz-transform: translate(3px, 0); }
+50% { -moz-transform: translate(-3px, 0); }
+100% { -moz-transform: translate(0, 0); }
+}
+
+@-webkit-keyframes shake {
+    0% { -webkit-transform: translate(3px, 0); }
+50% { -webkit-transform: translate(-3px, 0); }
+100% { -webkit-transform: translate(0, 0); }
+}
+
+.snp-theme12 .snp-header {
+    font-size: 35px;
+    text-align: left;
+}
+.snp-theme12 .snp-header2 {
+    font-size: 54px;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+.snp-theme12 .snp-text {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.snp-theme12 .snp-img {
+    display: table-cell;
+}
+
+.snp-theme12 .snp-right {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.snp-theme12 .snp-headers {
+    padding: 40px 30px 10px;
+    border-bottom: 1px #fff solid;
+}
+
+.snp-theme12 .snp-body {
+    padding: 15px 30px 10px 30px;
+}
+
+.snp-theme12 .snp-privacy {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.snp-theme12 .snp-form {
+    margin-bottom: 10px;
+}
+
+.snp-theme12 .snp-field {
+    display: block;
+    width: 100%;
+    height: 32px;
+    background-color: #ffffff;
+    font: 15px/1.5 Calibri, "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 10px 10px 10px 10px;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    border: 1px solid transparent;
+}
+
+.snp-theme12 textarea.snp-field {
+    height: 64px;
+}
+
+.snp-theme12 .snp-field ::-webkit-input-placeholder {
+    color: #969696;
+}
+.snp-theme12 .snp-field :-moz-placeholder {
+    color: #969696;
+}
+.snp-theme12 .snp-field :-ms-input-placeholder {
+    color: #969696;
+}
+.snp-theme12 .snp-submit, .snp-theme12 .snp-submit:hover { 
+    float: right;
+    border: 0px;
+    cursor: pointer;
+    min-height: 42px;
+    padding: 0 20px;
+    background: #E4BC42;
+    color: #fff;
+    font: 20px/1.5 Calibri, "Trebuchet MS", Arial, Helvetica, sans-serif;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.snp-theme12 .snp-submit:active {
+    position: relative;
+    top: 2px;
+}
+
+.snp-theme12 .snp-error {
+    color: #CC0000 !important;
+    border: 2px solid #CC0000 !important;
+    animation-name: shake; 
+    animation-duration: 150ms; 
+    animation-iteration-count: 2; 
+    animation-timing-function: linear;
+
+    -moz-animation-name: shake; 
+    -moz-animation-duration: 150ms; 
+    -moz-animation-iteration-count: 2; 
+    -moz-animation-timing-function: linear;
+
+    -webkit-animation-name: shake;
+    -webkit-animation-duration: 150ms;
+    -webkit-animation-iteration-count: 2;
+    -webkit-animation-timing-function: linear;
+}
+.snp-theme12 .snp-error::-webkit-input-placeholder { color: #CC0000; }
+.snp-theme12 input.snp-error:-moz-placeholder { color: #515151; }
+.snp-theme12 .snp-error.placeholder { color: #515151; }
+
+.snp-theme12 .snp-close {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.snp-pop-theme12-wrap .fancybox-close {
+    display: none;
+}
+
+.snp-theme12 .snp-close {
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 10px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #000;
+    color: #fff;
+}
+.snp-theme12 .snp-close:hover {
+    color: #fff;
+}
+
+
+@media only screen and (max-width: 780px) {
+    .snp-theme12 .snp-img {
+	display: none;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .snp-theme12 {
+	font-size: 12px !important;
+    }
+    .snp-theme12 .snp-text {
+	font-size: 13px !important;
+    }
+    .snp-theme12 .snp-header {
+	font-size: 17px !important;
+    }
+    .snp-theme12 .snp-header2 {
+	font-size: 32px !important;
+    }
+    .snp-theme12 .snp-headers {
+	padding: 25px 15px 10px;
+    }
+
+    .snp-theme12 .snp-body {
+	padding: 15px 20px 10px 20px;
+    }
+
+}

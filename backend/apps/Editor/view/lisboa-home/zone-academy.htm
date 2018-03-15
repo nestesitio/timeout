@@ -1,0 +1,67 @@
+<form id="form-zone-academy">
+    <div class="container-fluid zone-form">
+        <div class="row">
+            <div class="col-sm-12">
+                
+                <div class="zone-item zone-item-category" style="text-align: center;  color: #00AAE5;">{$zone-academy-header}</div>
+                
+                <div class="zone-item zone-item-title" style="text-align: center; font-size: 5em; margin-bottom: 25px;">
+                    {$zone-academy-title}
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="academy-highlight">
+                <div class="col-sm-6">
+                    
+                    <div class="zone-academy-select">{$zone-academy-select}</div>
+
+                    <div class="zone-item zone-item-category">{$zone-academy-category}</div>
+
+                    <div class="zone-item zone-item-title">{$zone-academy-event-title}</div>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                
+                                <div class="zone-item zone-item-date icon icon-date-2">
+                                    {$zone-academy-date}
+                                </div>
+                                <div class="zone-item zone-item-duration icon icon-duracao-1">
+                                    {$zone-academy-duration}
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="zone-item zone-item-hour icon icon-tempo">
+                                    {$zone-academy-hour}
+                                </div>
+                                <div class="zone-item zone-item-price icon icon-custo-2">
+                                    {$zone-academy-price}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="zone-item zone-item-text">{$zone-academy-text}</div>
+                    
+                    <div class="zone-item zone-item-id">{$zone-academy-id}</div>
+
+                </div>
+                <div class="col-sm-6">
+                    <div class="zone-item zone-item-image zone-full-image">
+                        {$zone-academy-image}
+                        <br />
+                        {$zone-academy-image-filename}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        {@include 'Editor/view/calendar-buttons.htm';[REPLACE-ZONE=>'academy']}
+
+
+    </div>
+</form>

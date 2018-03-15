@@ -1,0 +1,23 @@
+/* @font-face {font-family: 'ThirstySoftLight';src: url('fonts/3125FB_0_0.eot');src: url('fonts/3125FB_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/3125FB_0_0.woff2') format('woff2'),url('fonts/3125FB_0_0.woff') format('woff'),url('fonts/3125FB_0_0.ttf') format('truetype');}  
+@font-face {font-family: 'ThirstySoftRegular';src: url('fonts/3125FB_1_0.eot');src: url('fonts/3125FB_1_0.eot?#iefix') format('embedded-opentype'),url('fonts/3125FB_1_0.woff2') format('woff2'),url('fonts/3125FB_1_0.woff') format('woff'),url('fonts/3125FB_1_0.ttf') format('truetype');}
+@font-face {font-family: 'ThirstySoftRegular-Bold';src: url('fonts/3125FB_2_0.eot');src: url('fonts/3125FB_2_0.eot?#iefix') format('embedded-opentype'),url('fonts/3125FB_2_0.woff2') format('woff2'),url('fonts/3125FB_2_0.woff') format('woff'),url('fonts/3125FB_2_0.ttf') format('truetype');}
+@font-face {font-family: 'ThirstySoftBlack';src: url('fonts/3125FB_3_0.eot');src: url('fonts/3125FB_3_0.eot?#iefix') format('embedded-opentype'),url('fonts/3125FB_3_0.woff2') format('woff2'),url('fonts/3125FB_3_0.woff') format('woff'),url('fonts/3125FB_3_0.ttf') format('truetype');}
+@font-face {font-family: 'ThirstySoftMedium';src: url('fonts/3125FB_4_0.eot');src: url('fonts/3125FB_4_0.eot?#iefix') format('embedded-opentype'),url('fonts/3125FB_4_0.woff2') format('woff2'),url('fonts/3125FB_4_0.woff') format('woff'),url('fonts/3125FB_4_0.ttf') format('truetype');}
+@font-face {font-family: 'ThirstySoftExtrabold';src: url('fonts/3125FB_5_0.eot');src: url('fonts/3125FB_5_0.eot?#iefix') format('embedded-opentype'),url('fonts/3125FB_5_0.woff2') format('woff2'),url('fonts/3125FB_5_0.woff') format('woff'),url('fonts/3125FB_5_0.ttf') format('truetype');} */
+
+@include font-face("LeagueGothic", "fonts/leaguegothic-regular-webfont", 400);
+@include font-face("YellowDesign", "fonts/yellow_design_studio_-_thirstyroughreg-webfont", 400);
+@include font-face("YellowDesign", "fonts/yellow_design_studio_-_thirstyroughbol-webfont", 900);
+@include font-face("timeout", "fonts/timeorg-webfont", 400);
+@include font-face("tom-font", "fonts/tom-font", 400);
+
+$font__leagueGothic: "LeagueGothic";
+$font__yellowDesign: "YellowDesign";
+$font__main: 'timeout', 'Times New Roman', 'Georgia', serif;
+$font__tom: "tom-font";
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.2;
+$font__line-height-pre: 1.6;
+
+$em-base: 16px;

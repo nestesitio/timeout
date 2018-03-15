@@ -1,0 +1,25 @@
+<div class="zone-buttons">
+    <ul class="nav navbar-nav navbar-zone">
+        <li class="menu-edit-tools">
+            <a class="btn-edit-edit" 
+               data-action="/editor/edit_{$canonical}/{$zone-REPLACE-ZONE-id}/?zone=REPLACE-ZONE">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <br />Edit
+            </a>
+        </li>
+        <li class="menu-edit-tools">
+            <a class="btn-edit-undo {$zone-REPLACE-ZONE-disable}" 
+               data-action="/editor/undo_{$canonical}/{$zone-REPLACE-ZONE-id}/?zone=REPLACE-ZONE">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <br />Undo
+            </a>
+        </li>
+        <li class="menu-edit-tools">
+            <a class="btn-edit-save {$zone-REPLACE-ZONE-disable}" 
+               data-action="/editor/save_{$canonical}/{$zone-REPLACE-ZONE-id}/?zone=REPLACE-ZONE">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <br />Save
+            </a>
+        </li>
+    </ul>
+</div>

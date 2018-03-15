@@ -1,0 +1,191 @@
+.snp-theme14 {
+  background-color: #0065b3;
+  background-position: 100% 20px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  font-family: Arial;
+  font-weight: 400;
+  width: 660px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.snp-theme14 .snp-newsletter-content {
+  overflow: hidden;
+  color: #fff;
+  position: relative;
+  width: 280px;
+  padding: 20px 20px 0;
+}
+.snp-theme14 .snp-newsletter-content header {
+  overflow: hidden;
+  text-align: left;
+  color: #fff;
+}
+.snp-theme14 .snp-newsletter-content header h2,
+.snp-theme14 .snp-newsletter-content header h3 {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  position: relative;
+  text-transform: uppercase;
+}
+.snp-theme14 .snp-newsletter-content header h2 {
+    padding: 19px 0;
+}
+.snp-theme14 .snp-newsletter-content header h3 {
+  font-size: 16px;
+  text-transform: none;
+  padding: 16px 0;
+}
+.snp-theme14 .snp-newsletter-content header p {
+  text-align: left;
+  font-size: 13px;
+}
+.snp-theme14 .snp-newsletter-content p {
+  text-align: left;
+  font-size: 12px;
+  padding: 12px 0;
+}
+.snp-theme14 .snp-newsletter-content p small {
+  font-size: 9px;
+  padding-left: 20px;
+  background: url('../img/lock.png') no-repeat scroll 0 0 transparent;
+}
+.snp-theme14 .snp-newsletter-content p img {
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-right: 5px;
+}
+.snp-theme14 .snp-newsletter-content .left {
+  float: left;
+  width: 283px;
+  height: 266px;
+  background: url('../img/images.png') no-repeat scroll 0 0 transparent;
+  margin-left: 30px;
+}
+.snp-theme14 .snp-newsletter-content .right {
+  float: right;
+  width: 240px;
+  margin-right: 30px;
+}
+.snp-theme14 .snp-color {
+  color: #ffde00;
+}
+.snp-theme14 form div {
+  padding: 0 30px;
+}
+.snp-theme14 form label {
+  display: block;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+.snp-theme14 form input[type="text"],.snp-theme14 form select,.snp-theme14 form textarea,
+.snp-theme14 form input[type="text"]:focus,.snp-theme14 form select:focus,.snp-theme14 form textarea:focus{
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid transparent;
+  font-family: Arial, sans-serif;
+  background: transparent;
+  color: #666;
+  background-color: #fff;
+  font-size: 14px;
+  text-align: left;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  margin-bottom: 10px;
+}
+.snp-theme14 form input[type="text"]:last-child {
+  margin-bottom: 20px;
+}
+.snp-theme14 form input[type="submit"] {
+  background: #ffde00;
+  color: #337d8f;
+  font-weight: 800;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 25px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0;
+  display: block;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+    border-radius: 0px;	
+  -moz-border-radius: 0px;	
+  -webkit-border-radius: 0px;	
+}
+.snp-theme14 .snp-submit {
+  background-color: #fff;
+  padding: 15px 0;
+}
+.snp-theme14 .snp-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background: url('../img/close.png') no-repeat scroll 0 0 transparent;
+  cursor: pointer;
+}
+
+
+.snp-theme14 .snp-error {
+    color: #CC0000 !important;
+    border: 1px solid #CC0000 !important;
+}
+.snp-theme14 .snp-error::-webkit-input-placeholder { color: #CC0000; }
+.snp-theme14 input.snp-error:-moz-placeholder { color: #515151; }
+.snp-theme14 .snp-error.placeholder { color: #515151; }
+
+
+.snp-pop-theme14-wrap .fancybox-close {
+    display: none;
+}
+
+
+@media (max-width: 700px) {
+  .snp-theme14 {
+    max-width: 630px;
+  }
+  .snp-theme14 .snp-newsletter-content {
+    width: 240px;
+  }
+}
+@media (max-width: 630px) {
+  .snp-theme14 {
+    max-width: 460px;
+    background-image: none !important;
+  }
+  .snp-theme14 header {
+    padding: 0 15px;
+  }
+  .snp-theme14 header h2 {
+    margin-top: 45px;
+  }
+  .snp-newsletter-content {
+    width: 100% !important;
+  }
+}
+@media (max-width: 460px) {
+  .snp-theme14 {
+    max-width: 100%;
+  }
+  .snp-theme14 header h2 {
+    margin-top: 45px;
+  }
+}
+

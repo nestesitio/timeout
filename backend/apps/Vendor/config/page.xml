@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <show>
+    <fields comment="Fields for render">
+      <htmpageid field="htm_page.id" show="false" filter="false">
+
+        <label key="id" />
+      </htmpageid>
+      <htmpagehtmid field="htm_page.htm_id" range="multiple" show="false" filter="true">
+        <label lang="en">Htm Id</label>
+        <label lang="pt">Htm Id</label>
+      </htmpagehtmid>
+      <htmpagehtmlayoutid field="htm_page.htm_layout_id" range="multiple" show="false" filter="true">
+        <label lang="en">Htm Layout Id</label>
+        <label lang="pt">Htm Layout Id</label>
+      </htmpagehtmlayoutid>
+      <htmstat field="htm.stat">
+          <label lang="pt">Estado</label>
+          <label lang="en">Status</label>
+      </htmstat>
+      <ord field="htm.ord">
+          <label lang="en">Order</label>
+          <label lang="pt">Ordenação no menu</label>
+      </ord>
+      <htmpageupdatedat field="htm_page.updated_at" range="range" type="DateInput" show="true" filter="true">
+        <label lang="en">Updated At</label>
+        <label lang="pt">Actualização</label>
+      </htmpageupdatedat>
+    </fields>
+    <buttons comment="Commands for form and show">
+      <saveform class="glyphicon glyphicon-save" action="salesforce/edit_pages" auth="1">
+
+        <label lang="pt">Guardar</label>
+      </saveform>
+      <editform class="glyphicon glyphicon-pencil" action="salesforce/edit_pages" auth="1">
+
+        <label key="edit" />
+      </editform>
+      <closeform class="glyphicon glyphicon-remove" auth="4">
+
+        <label key="close" />
+      </closeform>
+    </buttons>
+  </show>
+</root>

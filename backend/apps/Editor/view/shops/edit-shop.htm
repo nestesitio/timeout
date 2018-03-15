@@ -1,0 +1,98 @@
+<div class="container-fluid shop-row form-shop">
+    <form>
+        <div class="row" style="border-bottom: #fff solid 2px">
+            <div class="col-sm-6">
+                <div class="zone-item zone-item-image zone-full-image">
+                    {$zone-shop-image}
+                    <br />
+                    {$zone-shop-image-filename}
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="zone-item zone-item-space-number">
+                    {$zone-shop-space-number}
+                </div>
+                <div class="zone-item zone-item-title" style="text-align: left; font-size: 4em;">
+                    {$zone-shop-title}
+                </div>
+                <div class="col-sm-9">
+                    <div class="zone-item zone-item-category">
+                        {$zone-shop-category}
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="zone-item zone-item-text">
+                            {$zone-shop-floor}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="border-bottom: #fff solid 2px">
+            <div class="col-sm-6">
+                <div class="zone-item zone-item-image zone-full-image">
+                    {$zone-shop-image-detail}
+                    <br />
+                    {$zone-shop-image-detail-filename}
+                </div>
+
+
+            </div>
+            <div class="col-sm-6">
+                <div class="zone-item zone-item-text">
+                    {$zone-shop-text}
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="row" style="border-bottom: #fff solid 2px">
+            <div class="col-sm-6">
+                <div class="zone-item zone-item-text form-inline">
+                    <label for="post-recipe-icon">Icon</label> {$zone-shop-recipe-icon}
+                </div>
+                <div class="zone-item zone-item-text-title">
+                    <label for="post-recipe-title">Recipe title</label> 
+                    {$zone-shop-recipe-title}
+                </div>
+                <div class="zone-item zone-item-text">
+                    <label for="post-recipe-description">Recipe Description</label> 
+                    {$zone-shop-recipe-description}
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="zone-item zone-item-text">
+                    <label for="post-recipe-ingredients">Recipe Ingredients</label> 
+                    {$zone-shop-recipe-ingredients}
+                </div>
+                <div class="zone-item zone-item-image zone-full-image">
+                    {$zone-shop-recipe-image}
+                    <br />
+                    {$zone-shop-recipe-image-filename}
+                </div>
+            </div>
+            
+        </div>
+
+
+        <div class="row-buttons">
+            <ul class="nav navbar-nav navbar-zone">
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-undo" 
+                       href="/backend/editor/eatshop/#row-{$zone-shop-data-id}">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Undo
+                    </a>
+                </li>
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-save save-button" 
+                       data-action="/editor/save_shops/{$zone-shop-data-id}/?js=1">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Save
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </form>
+</div>

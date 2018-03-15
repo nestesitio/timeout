@@ -1,0 +1,65 @@
+<div class="container-fluid zone-form" style="padding-bottom: 25px">
+    <form id="form-top-calendar">
+        <div class="row">
+            <div class="col-sm-6">
+
+                <div class="zone-item zone-item-title">{$zone-calendar-title}</div>
+                
+                <div class="zone-item zone-item-header" style="color:#fff; font-size: 2em;">{$zone-calendar-header}</div>
+
+                <div class="zone-item zone-item-text">{$zone-calendar-text}</div>
+
+                <div class="zone-item zone-item-id">{$zone-calendar-id}</div>
+
+            </div>
+            <div class="col-sm-6">
+                <div class="zone-item zone-item-image">
+                    {$zone-calendar-image}
+                    {$zone-calendar-image-filename}
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-12" style="margin-top: 20px;">
+                <div class="zone-item zone-item-header" style="font-size: 2em; text-align: center;">
+                    {$zone-calendar-list-header}
+                </div>
+                <div class="zone-item zone-item-title" style="font-size: 5.8em; text-align: center;">
+                    {$zone-calendar-list-title}
+                </div>
+            </div>
+        </div>
+
+
+        <div class="zone-buttons">
+            <ul class="nav navbar-nav navbar-zone">
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-edit" 
+                       data-action="/editor/edit_calendar/{$zone-calendar-id}/?zone=calendar">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Edit
+                    </a>
+                </li>
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-undo {$zone-calendar-disable}" 
+                       data-action="/editor/undo_calendar/{$zone-calendar-id}/?zone=calendar">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Undo
+                    </a>
+                </li>
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-save {$zone-calendar-disable}" 
+                       data-action="/editor/save_calendar/{$zone-calendar-id}/?zone=calendar">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Save
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </form>
+
+</div>
+

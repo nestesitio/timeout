@@ -1,0 +1,83 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+//Grid
+@mixin column{
+	float: left;
+}
+@mixin column-two{
+	width: 100%;
+
+	@include breakpoint(laptop) {
+		width: 50%;
+	}
+}
+
+@mixin column-two-mobile{
+	width: 50%;
+
+	@include breakpoint(laptop) {
+		//width: 50%;
+	}
+}
+
+@mixin column-three{
+	width: 100%;
+
+	@include breakpoint(laptop) {
+		width: 33.33333333333333%;
+	}
+}
+
+@mixin breakpoint($point) {
+	@if $point == desktop-4k {
+		@media (min-width: 160em) { @content ; }
+	}
+	@if $point == large-desktop {
+		//@media (min-width: 121.250em) { @content ; }
+		@media (min-width: 120em) { @content ; }
+	}
+	@if $point == big-desktop {
+		@media (min-width: 90em) { @content ; }
+	}
+	@if $point == medium-desktop{
+		@media (min-width: 87.500em) { @content; }
+	}
+	@if $point == desktop {
+		@media (min-width: 70em) { @content ; }
+	}
+	@else if $point == laptop {
+		@media (min-width: 64em) { @content ; }
+	}
+	@else if $point == tablet {
+		@media (min-width: 50em) { @content ; }
+	}
+	@else if $point == phablet {
+		@media (min-width: 37.5em)  { @content ; }
+	}
+	@else if $point == mobileonly {
+		@media (max-width: 37.5em)  { @content ; }
+	}
+}

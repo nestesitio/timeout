@@ -1,0 +1,390 @@
+.home{
+	margin: 0;
+}
+
+.home-slideshow{
+	position: relative;
+	@include size(100% 500px);
+	overflow: hidden;
+	
+	&__slider{
+		background-size: cover;
+		background-position: center center;
+		display: block;
+		@include size(100%);
+		@include position(absolute, 0 null null 0);
+		z-index: 0;
+		opacity: 0;
+		@include transition(all 1s);
+
+		&--active{
+			z-index: 1;
+			opacity: 1;
+		}
+	}
+
+	&__block{
+		text-align: center;
+		white-space: nowrap;
+		@include size(100% 100%);
+		@include position(absolute, 0 null null 0);
+
+		&:before {
+			content: '';
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+			margin-right: -0.25em; /* Adjusts for spacing */
+		}
+	}
+
+	&__info{
+		display: inline-block;
+  		vertical-align: middle;
+  		width: 65%;
+  		white-space: normal;
+
+  		@include breakpoint(big-desktop) {
+			width: 60%;
+  		}
+
+  		@include breakpoint(large-desktop) {
+			width: 50%;
+  		}
+	}
+
+	&__logo{
+		max-width: 100%;
+		margin-bottom: 50px;
+	}
+
+	&__title{
+		//font-size: rem(30);
+		font-size: rem(18);
+		font-family: $font__yellowDesign;
+		color: $color__blue-light;
+		font-weight: 400;
+		margin: 20px 0 0;
+
+		@include breakpoint(phablet) {
+			margin: 0;
+			font-size: rem(20);
+		}
+
+		@include breakpoint(laptop) {
+			//font-size: rem(40);
+			margin: 0;
+		}
+
+		@include breakpoint(desktop) {
+			//font-size: rem(50);
+		}
+
+		@include breakpoint(big-desktop) {
+			//font-size: rem(60);
+			font-size: rem(25);
+		}
+
+		@include breakpoint(large-desktop) {
+			//font-size: rem(70);
+			font-size: rem(28);
+		}
+	}
+
+	&__subtitle{
+		font-size: rem(30);
+		font-family: $font__leagueGothic;
+		text-transform: uppercase;
+		line-height: 1;
+		margin: 20px 0;
+		color: white;
+
+		@include breakpoint(laptop) {
+			font-size: rem(40);
+		}
+
+		@include breakpoint(desktop) {
+			font-size: rem(50);
+			margin: 20px 0 30px;
+		}
+
+		@include breakpoint(big-desktop) {
+			font-size: rem(70);
+		}
+
+		@include breakpoint(large-desktop) {
+			font-size: rem(90);
+			margin: 20px 0 50px;
+		}
+	}
+
+	&__controls{
+		text-align: center;
+		width: 100%;
+		@include position(absolute, null null 30px 0);
+		z-index: 100;
+	}
+
+	&__control{
+		cursor: pointer;
+		display: inline-block;
+		@include size(10px 20px);
+		background: white;
+		margin: 0 10px;
+		@include transition(all .33s);
+
+		&--active{
+			background: $color__blue-light;
+		}
+	}
+
+}
+
+.home-module{
+	overflow: hidden;
+
+	&:hover{
+
+		.home-module__image{
+			@include transform( scale(1.05) );
+		}
+
+	}
+
+	&--special{
+		margin-top: 0;
+
+		@include breakpoint(laptop) {
+			margin-top: 6px;
+		}
+
+		@include breakpoint(desktop) {
+			margin-top: 27px;
+		}
+
+		@include breakpoint(medium-desktop) {
+			margin-top: 45px;
+		}
+
+		@include breakpoint(large-desktop) {
+			margin-top: 70px;
+		}
+
+		@include breakpoint(desktop-4k) {
+			margin-top: 170px;
+		}
+	}
+
+	.academy{
+		
+		.col{
+			float: right;
+		}
+
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	&__header{
+		text-align: center;
+		padding: 20px;
+
+		@include breakpoint(phablet) {
+			padding: 40px;
+		}
+	}
+
+	&__col{
+		display: block;
+		width: 100%;
+		vertical-align: none;
+		margin-bottom: 20px;
+		overflow: hidden;
+
+		@include breakpoint(phablet) {
+			display: inline-block;
+			width: 50%;
+			vertical-align: bottom;
+			margin-bottom: 0;
+		}
+
+		&:last-child{
+			width: 100%;
+			padding: 0 20px;
+
+			@include breakpoint(phablet) {
+				width: 49%;
+			}
+
+			@include breakpoint(big-desktop) {
+				padding: 0 40px;
+			}
+
+			@include breakpoint(large-desktop) {
+				padding: 0 60px;
+			}
+		}
+	}
+
+	&__image-wrapper{
+		overflow: hidden;
+	}
+
+	&__image{
+		width: 100%;
+		display: block;
+		@include transition(all .33s);
+	}
+
+	&__title{
+		font-size: rem(18);
+		font-family: $font__yellowDesign;
+		color: $color__blue-light;
+		line-height: 1;
+		margin: 0 0 5px;
+		text-transform: lowercase;
+
+		@include breakpoint(phablet) {
+			font-size: rem(20);
+		}
+
+		@include breakpoint(big-desktop) {
+			font-size: rem(25);
+		}
+
+		@include breakpoint(large-desktop) {
+			font-size: rem(28);
+		}
+	}
+
+	&__subtitle{
+		font-size: rem(30);
+		font-family: $font__leagueGothic;
+		line-height: 1;
+		margin: 0 0 10px;
+		text-transform: uppercase;
+		position: relative;
+		display: inline-block;
+		color: white;
+
+		&:before, &:after{
+			content: ' ';
+			@include size(25px 2px);
+			background: white;
+
+			@include breakpoint(phablet) {
+				@include size(50px 2px);
+			}
+
+			@include breakpoint(desktop) {
+				@include size(100px 2px);
+			}
+
+			@include breakpoint(big-desktop) {
+				@include size(125px 2px);
+			}
+
+			@include breakpoint(large-desktop) {
+				@include size(164px 2px);
+			}
+		}
+
+		&:before{
+			@include position(absolute, 50% null null -45px);
+
+			@include breakpoint(phablet) {
+				left: -70px;
+			}
+
+			@include breakpoint(desktop) {
+				left: -120px;
+			}
+
+			@include breakpoint(big-desktop) {
+				left: -145px;
+			}
+
+			@include breakpoint(large-desktop) {
+				left: -184px;
+			}
+		}
+
+		&:after{
+			@include position(absolute, 50% -45px null null);
+
+			@include breakpoint(phablet) {
+				right: -70px;
+			}
+
+			@include breakpoint(desktop) {
+				right: -120px;
+			}
+
+			@include breakpoint(big-desktop) {
+				right: -145px;
+			}
+
+			@include breakpoint(large-desktop) {
+				right: -184px;
+			}
+		}
+
+		@include breakpoint(phablet) {
+			font-size: rem(40);
+		}
+
+		@include breakpoint(desktop) {
+			font-size: rem(50);
+			margin: 0 0 20px;
+		}
+
+		@include breakpoint(big-desktop) {
+			font-size: rem(70);
+		}
+
+		@include breakpoint(large-desktop) {
+			font-size: rem(100);
+		}
+
+		&--smaller{
+			font-size: rem(35);
+
+			&:before, &:after{
+				display: none;
+			}
+
+			@include breakpoint(phablet) {
+				font-size: rem(40);
+			}
+
+			@include breakpoint(desktop) {
+				font-size: rem(45);
+			}
+
+			@include breakpoint(big-desktop) {
+				font-size: rem(50);
+			}
+
+			@include breakpoint(large-desktop) {
+				font-size: rem(60);
+			}
+		}
+	}
+
+	&__description{
+		font-size: rem(15);
+		margin-bottom: 0;
+		color: white;
+
+		@include breakpoint(desktop) {
+			font-size: rem(18);
+		}
+
+		@include breakpoint(large-desktop) {
+			font-size: rem(20);
+		}
+	}
+
+}

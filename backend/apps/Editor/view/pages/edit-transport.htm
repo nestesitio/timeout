@@ -1,0 +1,58 @@
+<div class="container-fluid event-row">
+    <form id="form-edit-transport">
+
+        <div class="row">
+            <div class="col-sm-6">
+
+                <div class="zone-item zone-item-title">
+                    <label for="post-title">Title</label>
+                    {$zone-transport-title}
+                </div>
+                
+                <div class="zone-item zone-item-link">
+                    <label for="post-link">Link</label>
+                    {$zone-transport-link}
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+
+                <div class="zone-item zone-item-image zone-full-image">
+                    {$zone-transport-image}
+                    <br />
+                    {$zone-transport-image-filename}
+                </div>
+
+                <div id="data-id" style="display: none">{$data-id}</div>
+
+            </div>
+        </div>
+
+        <div class="row-buttons">
+            <ul class="nav navbar-nav navbar-zone">
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-edit disabled" 
+                       data-action="/editor/edittransport_gethere/{$data-id}/?js=1&zone=transport">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Edit
+                    </a>
+                </li>
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-undo" 
+                       data-action="/editor/undotransport_gethere/{$data-id}/?js=1&zone=transport">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Undo
+                    </a>
+                </li>
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-save" 
+                       data-action="/editor/savetransport_gethere/{$data-id}/?js=1&zone=transport">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Save
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </form>
+</div>

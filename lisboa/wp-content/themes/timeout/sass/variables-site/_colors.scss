@@ -1,0 +1,34 @@
+$color__blue: #0068ac;
+$color__blue-light: #00aae5;
+$color__blue-lighter: #8dcef1;
+
+$color__background-body: black;
+$color__background-screen: black;
+$color__background-hr: white;
+$color__background-button: $color__blue;
+$color__background-pre: white;
+$color__background-ins: white;
+
+$color__text-screen: white;
+$color__text-input: white;
+$color__text-input-focus: white;
+$color__link: white;
+$color__link-visited: white;
+$color__link-hover: $color__blue;
+$color__text-main: white;
+
+$color__border-button: $color__blue;
+$color__border-button-hover: white;
+$color__border-button-focus: white;
+$color__border-input: $color__blue;
+$color__border-abbr: $color__blue;
+
+::-moz-selection {
+    background: $color__blue-light;
+    text-shadow: none;
+}
+
+::selection {
+    background: $color__blue-light;
+    text-shadow: none;
+}

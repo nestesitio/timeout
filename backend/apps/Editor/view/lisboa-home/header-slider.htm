@@ -1,0 +1,35 @@
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <img class="carousel-logo" src="/wp-content/themes/timeout/img/timeout-market-lisbon.png" alt="Timeout Market Lisbon">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" id="carousel-sortable">
+        {@while ($item in $sliders):}
+        <li data-target="#myCarousel" data-id="{$item.id}" data-slide-to="{$item.num}" style="background-image: url({$item.src})" 
+            class="{$item.active} ui-state-default post-status-{$item.status}">
+        </li>
+        {@endwhile;}
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        {@while ($item in $sliders):}
+        <div class="item {$item.active}" data-id="{$item.id}">
+            <a href="{$item.permalink}" target="_blank">
+                <img src="{$item.src}" alt="{$item.title}" data-id="{$item.id}">
+            </a>
+            <h2 style="text-align: center">{$item.title}</h2>
+        </div>
+        {@endwhile;}
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+
+    {@include 'Editor/view/slider-buttons.htm'}
+</div>

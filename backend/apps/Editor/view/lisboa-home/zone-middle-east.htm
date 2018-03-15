@@ -1,0 +1,39 @@
+<form id="form-zone-middle-east">
+    <div class="container-fluid zone-form">
+        
+        <div class="zone-switcher-container">
+            <div class="zone-switcher">{$zone-middle-east-switcher}</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                
+                <div class="zone-item zone-item-header">{$zone-middle-east-header}</div>
+                
+                <div class="zone-item zone-item-title">{$zone-middle-east-title}</div>
+                
+                <div class="zone-item zone-item-image">
+                    {$zone-middle-east-image}
+                    {$zone-middle-east-image-filename}
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                
+                <div class="zone-item zone-item-text-title" style='font-size: 4.5em; text-align: left;'>
+                    {$zone-middle-east-text-title}
+                </div>
+                
+                <div class="zone-item zone-item-text" style='font-size: 1.8em;'>
+                    {$zone-middle-east-text}
+                </div>
+                
+                <div class="zone-item zone-item-id">{$zone-middle-east-id}</div>
+            </div>
+        </div>
+        
+        {@include 'Editor/view/buttons.htm';[REPLACE-ZONE=>'middle-east']}
+        
+
+    </div>
+</form>

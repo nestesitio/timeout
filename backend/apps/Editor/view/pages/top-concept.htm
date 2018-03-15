@@ -1,0 +1,52 @@
+<div class="container-fluid zone-form" style="padding-bottom: 25px">
+    <form id="form-top-concept">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="zone-item zone-item-video">{$zone-themarket-video}</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="zone-item zone-item-title">{$zone-themarket-title}</div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="zone-item zone-item-text">{$zone-themarket-left-column}</div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="zone-item zone-item-info">{$zone-themarket-right-column}</div>
+            </div>
+        </div>
+
+
+        <div class="zone-buttons">
+            <ul class="nav navbar-nav navbar-zone">
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-edit" 
+                       data-action="/editor/edit_themarket/{$zone-themarket-id}/?zone=themarket">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Edit
+                    </a>
+                </li>
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-undo {$zone-themarket-disable}" 
+                       data-action="/editor/undo_themarket/{$zone-themarket-id}/?zone=themarket">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Undo
+                    </a>
+                </li>
+                <li class="menu-edit-tools">
+                    <a class="btn-edit-save {$zone-themarket-disable}" 
+                       data-action="/editor/save_themarket/{$zone-themarket-id}/?zone=themarket">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <br />Save
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </form>
+
+</div>
+

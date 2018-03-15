@@ -1,0 +1,213 @@
+.academy-studio{
+	margin: 0;
+	@include clearfix;
+
+	&__image{
+		width: 100%;
+		display: block;
+	}
+
+	&__category{
+		font-size: rem(20);
+		font-family: $font__yellowDesign;
+		margin: 0;
+		line-height: 1;
+
+		@include breakpoint(big-desktop) {
+			font-size: rem(30);
+		}
+
+		@include breakpoint(large-desktop) {
+			font-size: rem(40);
+		}
+	}
+
+	&__title{
+		font-size: rem(30);
+		font-family: $font__leagueGothic;
+		line-height: 1;
+		margin: 10px 0;
+		text-transform: uppercase;
+
+		@include breakpoint(desktop) {
+			font-size: rem(40);
+		}
+
+		@include breakpoint(big-desktop) {
+			font-size: rem(50);
+		}
+
+		@include breakpoint(large-desktop) {
+			font-size: rem(80);
+			margin: 20px 0;
+		}
+	}
+
+	&__description{
+		font-size: rem(15);
+		margin: 0;
+
+		@include breakpoint(desktop) {
+			font-size: rem(18);
+		}
+
+		@include breakpoint(large-desktop) {
+			font-size: rem(20);
+		}
+	}
+
+	&__info{
+		width: 100%;
+
+		@include breakpoint(desktop) {
+			width: 50%;
+		}
+
+		p{
+			font-family: $font__leagueGothic;
+			font-size: rem(20);
+			text-transform: uppercase;
+			display: inline-block;
+			width: auto;
+			margin: 0 20px 10px 0;
+			line-height: 1;
+
+			@include breakpoint(laptop) {
+				width: 24%;
+				margin-right: 0;
+			}
+
+			@include breakpoint(desktop) {
+				font-size: rem(30);
+				width: 49%;
+			}
+
+			@include breakpoint(large-desktop) {
+				font-size: rem(40);
+				margin-bottom: 20px;
+			}
+
+			span{
+				margin-left: 5px;
+				color: white;
+
+				@include breakpoint(desktop) {
+					margin-left: 20px;
+				}
+			}
+		}
+	}
+
+	&__link{
+		font-family: $font__leagueGothic;
+		font-size: rem(25);
+		text-decoration: none;
+		color: white;
+		display: inline-block;
+		margin-top: 10px;
+		padding: 10px 30px;
+		text-transform: uppercase;
+		line-height: 1;
+		@include transition(all .33s);
+
+		@include breakpoint(laptop) {
+			@include position(absolute, 10% 0 auto auto);
+			margin-top: 0;
+		}
+
+		@include breakpoint(desktop) {
+			font-size: rem(40);
+			padding: 15px 45px;
+			top: 30%;
+		}
+
+		@include breakpoint(large-desktop) {
+			font-size: rem(65);
+			top: 45%;
+		}
+
+		&:hover{
+			padding-left: 50px;
+			color: white;
+
+			@include breakpoint(laptop) {
+				padding-right: 50px;
+				padding-left: 30px;
+			}
+
+			@include breakpoint(desktop) {
+				padding-right: 85px;
+			}
+		}
+	}
+
+}
+
+.academy-studio-archive{
+	@include clearfix;
+
+	.col:nth-child(1), .col:nth-child(2){
+		display: none;
+
+		@include breakpoint(laptop) {
+			display: block;
+		}
+	}
+
+	&__logo{
+		@include hide-text;
+		@include size(75px 53px);
+ 		background: url(img/academia-timeout.png) no-repeat;
+ 		background-size: contain;
+ 		margin: 0;
+
+ 		&--studio{
+ 			background: url(img/studio-timeout.png) no-repeat;
+ 			background-size: contain;
+ 		}
+
+ 		@include breakpoint(desktop) {
+			@include size(100px 71px);
+ 		}
+
+ 		@include breakpoint(big-desktop) {
+			@include size(150px 107px);
+			margin: 20px 0 10px;
+		}
+
+ 		@include breakpoint(large-desktop) {
+			font-size: rem(20);
+			@include size(215px 153px);
+			margin: 20px 0 30px;
+		}
+	}
+
+	&__description{
+		font-size: rem(15);
+
+		@include breakpoint(desktop) {
+			font-size: rem(18);
+		}
+
+		@include breakpoint(large-desktop) {
+			font-size: rem(20);
+		}
+	}
+
+	&__info{
+		font-family: $font__yellowDesign;
+		font-size: rem(14);
+		margin-bottom: 0;
+		margin-top: 0;
+
+		@include breakpoint(desktop) {
+			font-size: rem(18);
+			margin-top: 1em;
+		}
+
+		@include breakpoint(large-desktop) {
+			font-size: rem(20);
+		}
+	}
+
+}

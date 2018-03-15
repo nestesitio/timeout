@@ -1,0 +1,48 @@
+{@extends 'layout/creative/login.htm'}
+
+{@block name='css'}
+<link href="/backend/theme/css/personal/login.css" rel="stylesheet">
+{@endblock}
+
+<section class="login-layer">
+    <div class="container">
+        <div class="row">
+            <div class="container">
+                <div class="col-sm-4 col-centered text-center">
+                    <div class="text-center">
+                        <img class="img-responsive" src="/backend/theme/images/timeoutmarket.png" />
+                    </div>
+                    <h1 class="timeout-wwb">Worldwide Backoffice</h1>
+                    <h5>version 1.0. staff and suppliers only</h5>
+                    {@if($logmessage):}
+                    <div id="login_error">{$error-message}</div>
+                    {@endif;}
+                    <div class="col-sm-8 col-centered text-center">
+                        <form method="post" action="/backend/user/validate_login" onsubmit="return validateLogin()">
+
+                            <div class="form-help">
+                                USER NAME
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="u" placeholder="Username" required="required" />
+                            </div>
+                            <div class="form-help">
+                                PASSWORD
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="password" name="p" placeholder="********" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-sm btn-default btn-block" value="enter" />
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{@block name='js'}
+
+{@endblock}

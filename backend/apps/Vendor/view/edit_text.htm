@@ -1,0 +1,30 @@
+<ul class="list-inline langs">
+  {@while ($item in $langs):}
+  <li>
+      <a class="float-action" data-command="edit" 
+         data-lang="{$item.lang}" data-action="{$item.action}" data-id="{$item.id}">
+          <span class="label label-{$item.class}">
+              <span class="flag-icon flag-icon-{$item.lang}"></span> {$item.lang_tld}
+          </span>
+          
+      </a>
+  </li>
+  {@endwhile;}  
+</ul>
+<form action="{$action}" method="post">
+    <div class="btns-form">
+        <div class="btns-container">
+            <!--{$buttons}-->
+        </div>
+    </div>
+    {@while ($item in $usermsg):}
+    <div class="usermsg">{$item.msg}</div>
+    {@endwhile;}
+    {$hiddenfields}
+    {@while ($item in $inputs):}
+    <div class="form-group">
+        <label for="{$item.field}">{$item.label}</label><span class="input-msg"></span>
+        {$item.input}
+    </div>
+    {@endwhile;}    
+</form>
